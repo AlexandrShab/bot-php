@@ -1,4 +1,5 @@
 <?php
+//testing
 //echo '<h1>SertSaleBot</h1><br/>';
 //https://api.telegram.org/bot1862861327:AAF7CJdOJaEoGEjqrbu8BgRaPyAsBfecgP0/setwebhook?url=https://sertbot.shinny-mir.by/index.php
 
