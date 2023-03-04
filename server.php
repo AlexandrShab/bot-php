@@ -14,5 +14,3 @@
      }
      fclose($handle);
  }
-echo "HEllo WORLD!!!!!! - " . $time . "<br>";
-echo $hiMes;
