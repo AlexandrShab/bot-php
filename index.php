@@ -59,7 +59,7 @@ if(isset($update['message']))
         require_once __DIR__ . "/functions/work.php";
         $telega->sendMes($chat_id, $mes_text);
         $telega->sendMes($chat_id, hasHello($mes_text));
-        if (hasHello($msg['text']) == true)
+        if (hasHello($mes_text) == true)
         {
             $hi = goodTime();
             $telega->sendMes($chat_id, $hi);
