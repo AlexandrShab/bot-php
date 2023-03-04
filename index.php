@@ -37,7 +37,8 @@ if(isset($update['message']))
     $chat_title = isset($msg['chat']['title']) ? $msg['chat']['title'] : $tg_user['first_name'] . ' ' . $tg_user['last_name'];
     $message_id = $msg['message_id'];
     $mes_text = $update['message']['text'];
-    
+    $menuButton = mb_substr($mes_text, 0, 1);
+
     if(isset($msg['web_app_data']))//~~~ Проверяем приход данных из WebApp ~~~~
     {
         $telega->sendMes(MY_ID, 'button_text:' . $msg['web_app_data']['button_text'] . '\n' . 'data:\n' . $msg['web_app_data']['data']);
