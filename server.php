@@ -2,7 +2,7 @@
   require_once __DIR__ . '/autoload.php';
   $base = new BaseAPI;
   $products = $base->getAllProducts();
-  foreach ($product in $products) 
+  foreach ($products as $product) 
   {
      echo $product->id . ". " . $product->name . " - " . $product->doc_type ."<br/>";
   }
