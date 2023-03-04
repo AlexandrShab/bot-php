@@ -35,11 +35,7 @@ class Telega
                             'text' => $text,
                             'parse_mode' => 'HTML',
                             'reply_markup' => [
-                                'inline_keyboard' => [
-                                    [
-                                        ['text' => '▶️ НАПИСАТЬ ЭКСПЕРТУ', 'url' => 'http://t.me/blondin_man'],
-                                    ],
-                                ],//$keyboard,
+                                'inline_keyboard' => $keyboard,
                             ],
                         ];
         $res = $this->sendPost($method, $data_to_send);
