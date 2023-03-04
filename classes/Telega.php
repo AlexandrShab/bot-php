@@ -74,5 +74,19 @@ class Telega
 
 
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    function forwardMessage($chat_id, $mes_id)
+    {
+        $data['chat_id'] = BOT_GROUP;
+        $data['from_chat_id'] = $chat_id;
+        $data['message_id'] = $mes_id;
+        $res = sendPost("forwardMessage", $data);
+    }
+    function delMess($chat_id,$mes_id)
+    {
+    $data['chat_id'] = $chat_id;
+    $data['message_id'] = $mes_id;
+    $res = sendPost("deleteMessage", $data);
+    }    
+    
 
 }
