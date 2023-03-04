@@ -1,5 +1,5 @@
 <?php
-
+ 
 class Connect extends PDO
 {
     public function __construct()
