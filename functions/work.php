@@ -3,11 +3,11 @@
 function hasHello($sample)
 {
     $sample = strtolower($sample);
-  if ((strpos($sample,'здравс') != false)
-    || (strpos($sample,'привет') != false)
-    || (strpos($sample,'добрый') != false)
-    || (strpos($sample,'вопрос') != false)
-    || (strpos($sample,'драст') != false)
+  if ((strpos($sample,'здравс'))
+    || (strpos($sample,'привет'))
+    || (strpos($sample,'добрый'))
+    || (strpos($sample,'вопрос'))
+    || (strpos($sample,'драст'))
     ){return true;}
     else return false;
 }
