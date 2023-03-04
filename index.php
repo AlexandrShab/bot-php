@@ -59,6 +59,7 @@ if(isset($update['message']))
         if (hasHello($msg['text']) == true)
         {
             $hi = goodTime();
+            $telega->sendMes($chat_id, $hi);
             $telega->sendMes($chat_id, "👋 " . $hi . ", <b>" . $user->first_name . "</b>\n\📲 Просто напечатайте название товара и нажмите «Отправить».");
         }
         if (isset($msg['entities'])){
