@@ -1,13 +1,6 @@
 <?php
-    echo "WORKS";
-    $time = date("H") + 3; // 17:16:18
+ require_once __DIR__ . '/autoload.php';
+ $base = new BaseAPI;
  
-    $hiMes = 'Здравствуйте';
- 
-      if ($time > 4 && $time < 10) {  $hiMes = 'Доброе утро';}
-      if ($time > 9 && $time < 18) {  $hiMes = 'Добрый день';}
-      if ($time >17 && $time < 24) {  $hiMes = 'Добрый вечер';}
-      if ($time >-1 && $time < 5 ) {  $hiMes = 'Доброй ночи';}
-      
 echo "HEllo WORLD!!!!!! - " . $time . "<br>";
 echo $hiMes;

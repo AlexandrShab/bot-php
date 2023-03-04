@@ -37,4 +37,8 @@ class BaseAPI
         $data->execute();
         return true;
     }
+    public function addProduct($prod)
+    {
+        
+    }
 }
