@@ -1,7 +1,11 @@
 <?php
   require_once __DIR__ . '/autoload.php';
   $base = new BaseAPI;
-  
+  $products = $base->findProd("майка");
+    foreach ($products as $product) 
+    {
+      echo $product->id . ". " . $product->name . " - " . $product->doc_type ."<br/>";
+    }
   
   function listProducts($base)
   {
