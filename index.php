@@ -77,7 +77,7 @@ if(isset($update['message']))
                 $telega->sendMes($chat_id, $text2);
                 return;
               }
-              return;
+              
               if (($msg['text'] == ('/help' . BOT_NAME)) || ($msg['text'] == '/help'))
               { 
                 include_once __DIR__ . "/functions/work.php";
