@@ -36,7 +36,7 @@ if(isset($update['message']))
     $chat_type = $msg['chat']['type'];
     $chat_title = isset($msg['chat']['title']) ? $msg['chat']['title'] : $tg_user['first_name'] . ' ' . $tg_user['last_name'];
     $message_id = $msg['message_id'];
-    $mes_text = $msg['text'] || "Empty";
+    $mes_text = $update['message']['text'];
     
     if(isset($msg['web_app_data']))//~~~ Проверяем приход данных из WebApp ~~~~
     {
