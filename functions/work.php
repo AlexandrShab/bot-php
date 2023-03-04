@@ -6,7 +6,7 @@ function hasHello($sample)
   if ((strpos($sample,'здравс')>-1)
   or (strpos($sample,'привет')>-1)
   or (strpos($sample,'добрый')>-1)
-  or (strpos($sample,'вопрос')>-1)
+  or (strpos($sample,'hello')>-1)
   or (strpos($sample,'драст')>-1)
     ){return true;}
     else return false;
