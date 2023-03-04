@@ -104,7 +104,7 @@ if(isset($update['message']))
               return;
             }// ~~~~~~~~конец обработки команд~~~~~~~
             //~~~ Проверка нажатия кнопок главного меню ~~~~~
-            sendMes(MY_ID,$mes_text);
+            $telega->sendMes(MY_ID,$mes_text);
             if ($menuButton == '🎪') {
                 $telega->sendKeyboard($chat_id, '🎪 Главное меню 👇', mainMenuKeys());
                 return;
