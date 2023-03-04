@@ -12,6 +12,7 @@ class Telega
         $res = $this->sendPost($method, $data_to_send);
         return $res['result']['message_id'];
     }
+    
     function sendKeyboard($chat_id, $text, $keyboard)
     {
         $method = 'sendMessage';
@@ -19,23 +20,7 @@ class Telega
                             'chat_id' => $chat_id,
                             'text' => $text,
                             'parse_mode' => 'HTML',
-                            'reply_markup' => [
-                                'resize_keyboard' => true,
-                                'keyboard' => $keyboard,
-                                        ],
-                        ];
-        $res = $this->sendPost($method, $data_to_send);
-        return $res['result']['message_id'];
-    }
-    function sendInlineKeyboard($chat_id, $text, $keyboard)
-    {
-        $method = 'sendMessage';
-        $data_to_send = [
-                            'chat_id' => $chat_id,
-                            'text' => $text,
-                            'parse_mode' => 'HTML',
                             'reply_markup' => $keyboard,
-                            
                         ];
         $res = $this->sendPost($method, $data_to_send);
         //return $res['result']['message_id'];

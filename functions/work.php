@@ -39,3 +39,20 @@ function writeToExpertKeyboard()
     ];
     return $keyboard;
 }
+function mainMenuKeys(){
+    $keyboard = [
+        'resize_keyboard' => true,
+        'keyboard' => [
+            [
+                ['text' => '🔍 ПРОВЕРИТЬ ТОВАР'],
+            ],
+            [
+                ['text' => '🚀 О нас'], ['text' => '✏️ Задать вопрос'],
+            ],
+            [
+                ['text' => '🔗 Ссылки на наши ресурсы'], ['text' => '📞 Связаться с нами'],
+            ],
+        ],
+    ];
+    return $keyboard;
+}
