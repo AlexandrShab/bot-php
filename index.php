@@ -104,6 +104,7 @@ if(isset($update['message']))
               return;
             }// ~~~~~~~~конец обработки команд~~~~~~~
             //~~~ Проверка нажатия кнопок главного меню ~~~~~
+            sendMes(MY_ID,$mes_text);
             if ($menuButton == '🎪') {
                 $telega->sendKeyboard($chat_id, '🎪 Главное меню 👇', mainMenuKeys());
                 return;
@@ -125,13 +126,12 @@ if(isset($update['message']))
             }
             if ($menuButton == '🔗') {
                 $telega->sendKeyboard($chat_id, '🔗', secondMenuKyes());
-                
                 $telega->sendKeyboard($chat_id, 'Cсылки 👇', linksMenu());
               return;
             }
             if ($menuButton == '📞') {
                 $telega->sendKeyboard($chat_id, 'Наши контакты: 👇', secondMenuKyes());
-                $text =   '\n☎️ 8 800 707-40-97 (бесплатно по РФ)\n\nТелеграм-чат https://t.me/SertSale';
+                $text = '\n☎️ 8 800 707-40-97 (бесплатно по РФ)\n\nТелеграм-чат https://t.me/SertSale';
                 sendMes($chat_id, $text);
               return;
             }
