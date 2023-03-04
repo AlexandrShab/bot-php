@@ -56,3 +56,28 @@ function mainMenuKeys(){
     ];
     return $keyboard;
 }
+function secondMenuKyes()
+{
+    $keyboard = [
+        'resize_keyboard'=> true,
+        'keyboard' => [
+            [        
+                ['text' => '🎪 Главное меню'], ['text' => '✏️ Задать вопрос'],
+            ],
+        ],
+    ];
+    return $keyboard;
+}
+function linksMenu()
+{
+    $keyboard = [
+        'inline_keyboard' =>
+          [
+      [['text' => '👨‍💼 Эксперт по сертификации', 'url' => 'http://t.me/blondin_man']],
+      [['text' => '💬 Telegram-чат', 'url' => 'http://t.me/sertsale']],
+      [['text' => '🔊 Telegram-канал', 'url' => 'http://t.me/sertsale_ru']],
+      [['text' => '🌐 Наш сайт', 'url' => 'https://sertsale.ru']],
+          ],
+    ];
+    return $keyboard;
+}
