@@ -3,11 +3,11 @@
 function hasHello($sample)
 {
     $sample = mb_strtolower($sample, 'UTF-8');
-  if ((strpos($sample,'здравс')!=false)
-  or (strpos($sample,'привет')!=false)
-  or (strpos($sample,'добрый')!=false)
-  or (strpos($sample,'вопрос')!=false)
-  or (strpos($sample,'драст')!=false)
+  if ((strpos($sample,'здравс')>-1)
+  or (strpos($sample,'привет')>-1)
+  or (strpos($sample,'добрый')>-1)
+  or (strpos($sample,'вопрос')>-1)
+  or (strpos($sample,'драст')>-1)
     ){return true;}
     else return false;
 }
