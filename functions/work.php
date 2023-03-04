@@ -4,10 +4,10 @@ function hasHello($sample)
 {
     $sample = mb_strtolower($sample, 'UTF-8');
   if ((strpos($sample,'здравс')!=false)
-  || (strpos($sample,'привет')!=false)
-  || (strpos($sample,'добрый')!=false)
-  || (strpos($sample,'вопрос')!=false)
-  || (strpos($sample,'драст')!=false)
+  or (strpos($sample,'привет')!=false)
+  or (strpos($sample,'добрый')!=false)
+  or (strpos($sample,'вопрос')!=false)
+  or (strpos($sample,'драст')!=false)
     ){return true;}
     else return false;
 }
