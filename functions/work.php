@@ -29,9 +29,10 @@ function goodTime()
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function writeToExpertKeyboard()
 {
-    $keyboard = array(
+    $keyboard = [
         'inline_keyboard' => [
       ['text' => '▶️ НАПИСАТЬ ЭКСПЕРТУ', 'url' => 'http://t.me/blondin_man'],
-                        ]);
+                        ]
+                ];
     return $keyboard;
 }
