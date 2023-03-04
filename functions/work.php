@@ -35,6 +35,6 @@ function writeToExpertKeyboard()
                 ['text' => '▶️ НАПИСАТЬ ЭКСПЕРТУ', 'url' => 'http://t.me/blondin_man'],
             ],
         ],
-    ],
+    ];
     return $keyboard;
 }
