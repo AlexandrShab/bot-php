@@ -2,6 +2,12 @@
  require_once __DIR__ . '/autoload.php';
  $base = new BaseAPI;
  
+
+
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function csvToBase()
 {
  if (($handle = fopen(__DIR__ . "/data/products.csv", "r")) !== FALSE) {

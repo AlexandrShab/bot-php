@@ -45,4 +45,17 @@ class BaseAPI
         $data->execute();
         return true;
     }
-}
+    public function getAllProducts()
+    {
+        $base = new Connect;
+        $query = "SELECT * FROM products";
+        $data = $base->prepare($query);
+        $data->execute();
+        $products = array();
+        while($product = $data->fetch(PDO::FETCH_OBJ))
+        {
+            $products[] = $product;
+        }
+        return $products;
+    }
+}   
