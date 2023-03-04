@@ -2,6 +2,7 @@
 
 function hasHello($sample)
 {
+    $sample = strtolower($sample);
   if ((strpos($sample,'здравс') != false)
     || (strpos($sample,'привет') != false)
     || (strpos($sample,'добрый') != false)
