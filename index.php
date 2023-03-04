@@ -78,7 +78,7 @@ if(isset($update['message']))
                 sendMess(myId,chatId+'\n'+chatName+'\n'+chatType);
                 getChat(chatId,chatName,chatType);return;     
               }*/
-              if ($mes_text == '/menu'. BOT_NAME) || $mes_text == '/menu'){ 
+              if (($mes_text == '/menu'. BOT_NAME) || ($mes_text == '/menu')){ 
                     $telega->sendKeyboard($chat_id, '🎪 Главное меню 👇', mainMenuKeys());
                 return;
               } 
