@@ -61,7 +61,7 @@ class BaseAPI
     public function findProd($sample)
     {
         $base = new Connect;
-        $query = "SELECT * FROM products";
+        $query = "SELECT * FROM products WHERE name LIKE '%$sample%'";
         $data = $base->prepare($query);
         $data->execute();
         $products = array();
