@@ -1,8 +1,11 @@
 <?php
- require_once __DIR__ . '/autoload.php';
- $base = new BaseAPI;
- 
-
+  require_once __DIR__ . '/autoload.php';
+  $base = new BaseAPI;
+  $products = $base->getAllProducts();
+  for($i=0;$i<count($products);$i++)
+  {
+    echo $products[$i] . "<br/>";
+  }
 
 
 
