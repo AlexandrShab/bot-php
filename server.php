@@ -4,7 +4,8 @@
   $products = $base->getAllProducts();
   for($i=0;$i<count($products);$i++)
   {
-    echo $products[$i] . "<br/>";
+     print_r($products[$i]); 
+     echo "<br/>";
   }
 
 
