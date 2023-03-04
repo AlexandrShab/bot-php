@@ -1,6 +1,6 @@
 <?php
 
-function isMesFind($sample)
+function hasHello($sample)
 {
   if ((strpos($sample,'здравс') != false)
     || (strpos($sample,'привет') != false)
