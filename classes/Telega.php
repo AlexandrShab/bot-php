@@ -39,7 +39,7 @@ class Telega
                                         ],
                         ];
         $res = $this->sendPost($method, $data_to_send);
-        return $res['result']['message_id'];
+        //return $res['result']['message_id'];
     }
     function answerCallbackQuery($callback_id, $text, $alert)
     {
