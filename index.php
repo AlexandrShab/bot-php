@@ -56,7 +56,7 @@ if(isset($update['message']))
         $user->update($tg_user);
         $telega->sendMes(MY_ID, "Пишет <b>$user->first_name $user->last_name</b> \nДата старта: $user->date");
         require_once __DIR__ . "/functions/work.php";
-        if (hasHello($msg['text']))
+        if (hasHello($msg['text']) == true)
         {
             $hi = goodTime();
             $telega->sendMes($chat_id, "👋 " . $hi . ", <b>" . $user->first_name . "</b>\n\📲 Просто напечатайте название товара и нажмите «Отправить».");
