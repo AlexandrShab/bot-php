@@ -51,8 +51,50 @@ class User
         
         return true;
     }
+    //~~~~~~~~~~~~~~~~~~~~
+
+
     public function getNameAsTgLink()
     {
+            $name = "";
+            $userId = $this->id;
         
+            if (isset($this->first_name)) 
+            {
+                $name = $this->first_name;
+                if ( isset($this->last_name) ) 
+                {
+                    $name .= " " . $this->last_name;
+                }
+            } else
+                if (isset($this->username) ) 
+                {
+                    $name = $this->username;
+                }
+        
+            $name = "<a href=\"tg://user?id=" . $userId . "\">" . $name . "</a>";
+            
+            return $name;
     }
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        public function getFullName() {
+            $name = "";
+        
+            if (isset($this->first_name) ) {
+            $name = $this->first_name;
+            if (isset($this->last_name) ) {
+                $name .= " " . $this->last_name;
+            }
+            } else
+            if (isset($this->last_name) ) {
+                $name = $this->last_name;
+            }
+            if (isset($this->username) ) {
+            if ($name == ""){
+                $name .= " / @" . $this->username;
+            }
+            }
+            
+            return $name;
+        }
 }

@@ -71,4 +71,8 @@ class Telega
         curl_close($curl);
         return (json_decode($result, 1) ? json_decode($result, 1) : $result);
     }
+
+
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 }
