@@ -34,9 +34,7 @@ class Telega
                             'chat_id' => $chat_id,
                             'text' => $text,
                             'parse_mode' => 'HTML',
-                            'reply_markup' => [
-                                'inline_keyboard' => $keyboard,
-                                        ],
+                            'reply_markup' => $keyboard,
                         ];
         $res = $this->sendPost($method, $data_to_send);
         //return $res['result']['message_id'];
