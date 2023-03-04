@@ -1,4 +1,5 @@
 <?php
+    echo "WORKS";
     $time = date("H"); // 17:16:18
  
     $hiMes = 'Здравствуйте';
