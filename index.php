@@ -133,8 +133,8 @@ if(isset($update['message']))
             }
             if ($menuButton == '📞') {
                 $telega->sendKeyboard($chat_id, "Наши контакты: 👇", secondMenuKyes());
-                $text = "\n☎️ 8 800 707-40-97 (бесплатно по РФ)\n\nТелеграм-чат https://t.me/SertSale";
-                sendMes($chat_id, $text);
+                $text = "☎️ 8 800 707-40-97 (бесплатно по РФ)\n\nТелеграм-чат https://t.me/SertSale";
+                $telega->sendMes($chat_id, $text);
               return;
             }
         
