@@ -12,4 +12,4 @@
       if (time >17 && time < 24) {  hiMes = 'Добрый вечер'}
       if (time >-1 && time < 5 ) {  hiMes = 'Доброй ночи'}
       */
-echo "HEllo WORLD!!!!!! - " . $time;
+echo "HEllo WORLD!!!!!! - " . $time +3;
