@@ -39,7 +39,7 @@ if(isset($update['message']))
     $message_id = $msg['message_id'];
     $mes_text = $update['message']['text'];
     $menuButton = mb_substr($mes_text, 0, 1);
-$telega-sendMes(MY_ID, $menuButton);
+$telega->sendMes(MY_ID, $menuButton);
     if(isset($msg['web_app_data']))//~~~ Проверяем приход данных из WebApp ~~~~
     {
         $telega->sendMes(MY_ID, 'button_text:' . $msg['web_app_data']['button_text'] . '\n' . 'data:\n' . $msg['web_app_data']['data']);
