@@ -2,7 +2,7 @@
 
 function hasHello($sample)
 {
-    $sample = strtolower($sample);
+    $sample = mb_strtolower($sample, 'UTF-8');
   if ((strpos($sample,'здравс'))
     || (strpos($sample,'привет'))
     || (strpos($sample,'добрый'))
