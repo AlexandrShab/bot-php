@@ -60,7 +60,7 @@ if(isset($update['message']))
         $user->update($tg_user);
         $telega->sendMes(MY_ID, "Пишет <b>$user->first_name $user->last_name</b> \nДата старта: $user->date");
         require_once __DIR__ . "/functions/work.php";
-$telega->sendMes(MY_ID, strlen($menuButton));
+
         if (hasHello($mes_text))
         {
             $hi = goodTime();
@@ -124,7 +124,7 @@ $telega->sendMes(MY_ID, strlen($menuButton));
               return;
             }   
             if ($mes_text == '✏️ Задать вопрос') {
-              $telega->sendKeyboard($chat_id, "✏️ Задать вопрос", secondMenuKyes());  
+              $telega->sendKeyboard($chat_id, "✏️", secondMenuKyes());  
                 $telega->sendKeyboard($chat_id, "✏️ Написать эксперту:", writeToExpertKeyboard());               
               return;
             }
