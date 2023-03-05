@@ -124,8 +124,9 @@ $telega->sendMes(MY_ID, $menuButton);
               return;
             }   
             if ($menuButton == '✏️') {
-                $telega->sendKeyboard($chat_id, "✏️ Задать вопрос", secondMenuKyes());
-                $telega->sendKeyboard($chat_id, "Написать эксперту: 👇", writeToExpertKeyboard());                
+                
+                $telega->sendKeyboard($chat_id, "Написать эксперту: 👇", writeToExpertKeyboard());
+                $telega->sendKeyboard($chat_id, "✏️ Задать вопрос", secondMenuKyes());                
               return;
             }
             if ($menuButton == '🔗') {
