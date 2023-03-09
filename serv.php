@@ -138,7 +138,7 @@ if (count($result) > 0) {
 } else {
     echo "<h3>Такого товара в оперативной базе не найдено!</h3>";
 }
-echo "<br/><button onclick=\"window.location=\"https://sertbot.shinny-mir.by/pages/find-product.php\"\">Новый поиск</button>";
+echo "<br/><button onclick=\"window.location.href='https://sertbot.shinny-mir.by/pages/find-product.php'\">Новый поиск</button>";
 
 
 
