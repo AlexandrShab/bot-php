@@ -108,13 +108,16 @@ if(isset($update['message']))
                 //~~~ Конец проверки кнопок главного меню ~~~~~
         }//~~~ Конец работы с сущностями~~~~~~~~~
             //~~~ Проверка нажатия кнопок главного меню ~~~~~
-            
+            $telega->sendMes(MY_ID, $menuButton);
             if ($menuButton == '🎪') {
                 $telega->sendKeyboard($chat_id, "🎪 Главное меню 👇", mainMenuKeys());
                 return;
             }
             if ($menuButton == '🔍') {
-                $telega->sendKeyboard($chat_id, "✏️ Введите товар для проверки:👇", secondMenuKyes());
+              $new_url = 'https://sertbot/shinny-mir.by/findform.php';
+              header('Location: '.$new_url);
+              exit();
+                //$telega->sendKeyboard($chat_id, "✏️ Введите товар для проверки:👇", secondMenuKyes());
                 return;
             } 
             if ($menuButton == '🚀') {
@@ -123,9 +126,9 @@ if(isset($update['message']))
                $telega->sendKeyboard($chat_id, $textAbout, writeToExpertKeyboard());
               return;
             }   
-            if ($mes_text == '✏️ Задать вопрос') {
-              $telega->sendKeyboard($chat_id, "✏️", secondMenuKyes());  
-                $telega->sendKeyboard($chat_id, "✏️ Написать эксперту:", writeToExpertKeyboard());               
+                                                                         if ($menuButton == '✏️') {
+                $telega->sendKeyboard($chat_id, "✏️", secondMenuKyes());
+                $telega->sendKeyboard($chat_id, "Написать эксперту: 👇", writeToExpertKeyboard());                
               return;
             }
             if ($menuButton == '🔗') {
