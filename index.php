@@ -45,7 +45,7 @@ if(isset($update['message']))
     $chat_title = isset($msg['chat']['title']) ? $msg['chat']['title'] : $tg_user['first_name'] . ' ' . $tg_user['last_name'];
     $message_id = $msg['message_id'];
     $mes_text = $update['message']['text'];
-    $menuButton = mb_substr($mes_text, 0, 1);
+    //$menuButton = mb_substr($mes_text, 0, 1);
 
     
     if(isset($msg['web_app_data']))//~~~ Проверяем приход данных из WebApp ~~~~
@@ -66,6 +66,7 @@ if(isset($update['message']))
         $user = new User($userFromBase);
         $user->update($tg_user);
         $telega->sendMes(MY_ID, "Пишет <b>$user->first_name $user->last_name</b> \nДата старта: $user->date");
+        $telega->sendMes(MY_ID, $mes_text);
         require_once __DIR__ . "/functions/work.php";
 
         if (hasHello($mes_text))
@@ -115,7 +116,7 @@ if(isset($update['message']))
                 //~~~ Конец проверки кнопок главного меню ~~~~~
         }//~~~ Конец работы с сущностями~~~~~~~~~
             //~~~ Проверка нажатия кнопок главного меню ~~~~~
-            $telega->sendMes(MY_ID, $menuButton);
+            
             if ($mes_text == '🎪 Главное меню') {
                 $telega->sendKeyboard($chat_id, "🎪 Главное меню 👇", mainMenuKeys());
                 return;
