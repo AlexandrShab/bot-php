@@ -133,7 +133,7 @@ if(isset($update['message']))
                $telega->sendKeyboard($chat_id, $textAbout, writeToExpertKeyboard());
               return;
             }   
-            if ($menuButton == '✏️') {
+            if ($mes_text == '✏️ Задать вопрос') {
                 $telega->sendKeyboard($chat_id, "✏️", secondMenuKyes());
                 $telega->sendKeyboard($chat_id, "Написать эксперту: 👇", writeToExpertKeyboard());                
               return;
