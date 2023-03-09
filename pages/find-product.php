@@ -24,8 +24,10 @@
               
         document.body.style.backgroundColor = style.bg_color;
         document.body.style.color = style.text_color;
-        document.button.style.backgroundColor = style.button_color;
-        document.button.style.color = style.button_text_color;
+        document.querySelectorAll('button').style.backgroundColor = style.button_color;
+       // document.button.style.backgroundColor = style.button_color;
+       document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
+        //document.button.style.color = style.button_text_color;
    webApp.ready();
        /*  const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
