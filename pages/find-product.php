@@ -19,7 +19,7 @@
     <script>
         var webApp = window.Telegram.WebApp;
         var style = webApp.themeParams;
-        //document.getElementById('list').innerHTML = JSON.stringify(themeParams);
+        document.getElementById('list').innerHTML = JSON.stringify(themeParams);
               
         document.body.style.backgroundColor = style.bg_color;
         document.body.style.color = style.text_color;
