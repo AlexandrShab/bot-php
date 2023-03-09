@@ -15,6 +15,11 @@ define('BOT_NAME','@SertSale_bot');
 
 
 $updt = file_get_contents('php://input');
+if(!$updt){
+  $new_url = 'https://sertbot.shinny-mir.by/findform.php';
+header('Location: '.$new_url);
+exit();
+}
 $update = json_decode($updt, TRUE);
 file_put_contents('update.txt', '$update: ' .print_r($update,1)); 
 
