@@ -121,8 +121,8 @@ if(isset($update['message']))
                 return;
             }
             if ($mes_text == '🔍 ПРОВЕРИТЬ ТОВАР') {
-              $new_url = 'https://sertbot.shinny-mir.by/pages/find-product.php';
-              $telega->sendMes($chat_id,"Работает улучшеный поиск\n" . $new_url);
+              //$new_url = 'https://sertbot.shinny-mir.by/pages/find-product.php';
+              $telega->sendKeyboard($chat_id,"Расширенный поиск", inLineWebAppButton());
               
                 //$telega->sendKeyboard($chat_id, "✏️ Введите товар для проверки:👇", secondMenuKyes());
                 return;
