@@ -8,7 +8,7 @@
     <title>SertSale</title>
 </head>
 <body>
-    <h1 style="margin: 0 auto;">Поиск товара</h1>
+    <h1 style="margin: 20px;">Поиск товара</h1>
     <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
         <div style="height:40px;margin:20px">
             <input style="width:90%; 
