@@ -114,7 +114,7 @@ if(isset($update['message']))
                 return;
             }
             if ($menuButton == '🔍') {
-              $new_url = 'https://sertbot/shinny-mir.by/findform.php';
+              $new_url = 'https://sertbot.shinny-mir.by/findform.php';
               $telega->sendMes($chat_id,"Работает улучшеный поиск\n" . $new_url);
               
                 //$telega->sendKeyboard($chat_id, "✏️ Введите товар для проверки:👇", secondMenuKyes());
