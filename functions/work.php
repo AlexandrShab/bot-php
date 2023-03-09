@@ -84,7 +84,7 @@ function linksMenu()
 function inLineWebAppButton()
 {
     $keyboard = [
-        'inline_keyboard' :
+        'inline_keyboard' =>
           [
       [['text'=> 'Продвинутый поиск','web_app' => ['url': 'https://sertbot.shinny-mir.by/pages/find-product.php']]],
             ],
