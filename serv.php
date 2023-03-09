@@ -90,7 +90,7 @@ foreach ($finded_list as $product) {// Находим максимальное �
        // $result[] = $product;
     }
 }
-foreach ($finded_list as $product) { //Собораем массив с максимальными совпадениями
+foreach ($finded_list as $product) { //Собираем массив с максимальными совпадениями
     if($product->count_words == $max_col)
     {
         $result[] = $product;
@@ -148,7 +148,7 @@ if (count($result) > 0) {
 } else {
     echo "<h3>Такого товара в оперативной базе не найдено!</h3>";
 }
-echo "<br/><button onclick=\"window.location.href='https://sertbot.shinny-mir.by/pages/find-product.php'\">Новый поиск</button>";
+echo "<br/><button style=\"padding:10px;\" onclick=\"window.location.href='https://sertbot.shinny-mir.by/pages/find-product.php'\">Новый поиск</button>";
 
 
 

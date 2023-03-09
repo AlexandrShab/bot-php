@@ -10,8 +10,8 @@
 <body>
     <h1>Поиск товара</h1>
     <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
-        <input type="text" name="query" placeholder="Введите название товара">
-        <button type="submit">Проверить</button>
+        <input style="height=30px;" type="text" name="query" placeholder="Введите название товара">
+        <button style="padding:10px;" type="submit">Проверить</button>
     </form>
     <div id="list">
 
