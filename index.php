@@ -3,12 +3,12 @@
 //echo '<h1>SertSaleBot</h1><br/>';
 //https://api.telegram.org/bot1862861327:AAF7CJdOJaEoGEjqrbu8BgRaPyAsBfecgP0/setwebhook?url=https://sertbot.shinny-mir.by/index.php
 $input = file_get_contents('php://input');
-if(!$input){
+
   echo "<h1>Нет страницы для отображения</h1>";
  /* $new_url = 'https://sertbot.shinny-mir.by/findform.php';
 header('Location: '.$new_url);*/
 exit();
-}
+
 //$bot_url = 'https://sertbot.shinny-mir.by';
 require_once __DIR__ . '/autoload.php';
 
