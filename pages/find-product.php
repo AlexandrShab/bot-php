@@ -14,7 +14,7 @@
             <input style="width:90%; 
                 height: 100%; font: size 20px;" 
                 type="text" name="query" placeholder="Введите название товара"><br/><br/>
-            <button style="padding:10px; height: 100%;" type="submit">Проверить</button>
+            <button style="margin-right:20px;padding:10px; height: 100%;" type="submit">Проверить</button>
         </div>
     </form>
     <div id="list">
