@@ -19,7 +19,7 @@
     <script>
         var webApp = window.Telegram.WebApp;
         var themeParams = webApp.themeParams;
-        window.getElementById('list').innerHTML = JSON.stringify(themeParams);
+        document.getElementById('list').innerHTML = JSON.stringify(themeParams);
               webApp.ready();
             
     </script>
