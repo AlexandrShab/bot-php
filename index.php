@@ -121,7 +121,7 @@ if(isset($update['message']))
                 return;
             }
             if ($menuButton == '🔍') {
-              $new_url = 'https://sertbot.shinny-mir.by/findform.php';
+              $new_url = 'https://sertbot.shinny-mir.by/pages/find-product.php';
               $telega->sendMes($chat_id,"Работает улучшеный поиск\n" . $new_url);
               
                 //$telega->sendKeyboard($chat_id, "✏️ Введите товар для проверки:👇", secondMenuKyes());
@@ -133,7 +133,7 @@ if(isset($update['message']))
                $telega->sendKeyboard($chat_id, $textAbout, writeToExpertKeyboard());
               return;
             }   
-                                                                         if ($menuButton == '✏️') {
+            if ($menuButton == '✏️') {
                 $telega->sendKeyboard($chat_id, "✏️", secondMenuKyes());
                 $telega->sendKeyboard($chat_id, "Написать эксперту: 👇", writeToExpertKeyboard());                
               return;
