@@ -21,7 +21,7 @@
         var style = webApp.themeParams;
         //document.getElementById('list').innerHTML = JSON.stringify(themeParams);
               webApp.ready();
-         const style ={"bg_color":"#ffffff",
+         const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
                 "button_text_color":"#ffffff",
                 "hint_color":"#999999",
