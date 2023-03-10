@@ -15,7 +15,7 @@
             letter-spacing: .02em;
             display: block;
             text-align: center;
-            margin: 0 auto;
+            margin: 20px auto;
             width: 90%;
             max-width: 960px;
             min-width: 300px;
