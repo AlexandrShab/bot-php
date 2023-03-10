@@ -31,6 +31,7 @@
             text-align: center;
             margin: 0 auto;
             width: 100%;
+            height: 10%;
             color: white;
             backgroundColor: black;
             max-width: 960px;
@@ -41,7 +42,7 @@
 </head>
 <body>
     <div class="brand">SertSale</div>
-    <div class="content">
+    <div id="content">
         <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="height:40px;margin:20px">
@@ -62,8 +63,8 @@
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          webApp.ready();      
-         document.querySelectorAll('.content').style.backgroundColor = style.bg_color;
-         document.querySelectorAll('.content').style.color = style.text_color;
+         document.querySelectorAll('#content').style.backgroundColor = style.bg_color;
+         document.querySelectorAll('#content').style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
