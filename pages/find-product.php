@@ -35,6 +35,7 @@
             height: 100px;
             color: white;
             backgroundColor: black;
+            background-attachment: fixed;
             max-width: 960px;
             min-width: 200px;
             /*word-break: break-word;*/
