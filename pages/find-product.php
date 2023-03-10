@@ -9,14 +9,14 @@
     <style>
         .main-title {
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             line-height: 1.133;
             font-weight: 400;
             letter-spacing: .018em;
             display: block;
             text-align: center;
-            margin: 0 auto 15px;
-            width: 100%;
+            margin: 0 auto;
+            width: 90%;
             max-width: 960px;
             min-width: 100px;
             word-break: break-word;
