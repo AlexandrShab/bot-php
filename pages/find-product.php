@@ -38,7 +38,9 @@
     </style>
 </head>
 <body>
-    <div class="brand" style="backgroundColor: black;">SertSale</div>
+    <div class="brand" style="backgroundColor: black;">SertSale
+    <br/>бот
+    </div>
     <div id="content">
         <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
