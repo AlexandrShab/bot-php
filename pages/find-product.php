@@ -31,7 +31,7 @@
             text-align: center;
             margin: 0 auto;
             width: 100%;
-            color:white;
+            color: white;
             backgroundColor: black;
             max-width: 960px;
             min-width: 200px;
@@ -41,17 +41,19 @@
 </head>
 <body>
     <div class="brand">SertSale</div>
-    <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
-    <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
-        <div style="height:40px;margin:20px">
-            <input style="width:90%; 
-                height: 100%; font: size 20px;" 
-                type="text" name="query" placeholder="Введите название товара"><br/><br/>
-            <button style="margin-right:20px;padding:10px; height: 100%;" type="submit">Проверить</button>
-        </div>
-    </form>
-    <div id="list">
+    <div class="content">
+        <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
+        <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
+            <div style="height:40px;margin:20px">
+                <input style="width:90%; 
+                    height: 100%; font: size 20px;" 
+                    type="text" name="query" placeholder="Введите название товара"><br/><br/>
+                <button style="margin-right:20px;padding:10px; height: 100%;" type="submit">Проверить</button>
+            </div>
+        </form>
+        <div id="list">
 
+        </div>
     </div>
     <script>
         var webApp = window.Telegram.WebApp;
@@ -60,8 +62,8 @@
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          webApp.ready();      
-        document.body.style.backgroundColor = style.bg_color;
-        document.body.style.color = style.text_color;
+         document.querySelectorAll('.content').style.backgroundColor = style.bg_color;
+         document.querySelectorAll('.content').style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
