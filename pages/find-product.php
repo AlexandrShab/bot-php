@@ -39,7 +39,7 @@
 </head>
 <body>
     <div class="brand" style="backgroundColor: black;">SertSale
-        <br/>бот
+        <br/><span>бот</span>
     </div>
     <div id="content">
         <h1 class="main-title">Поиск товара</h1>
