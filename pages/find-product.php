@@ -24,22 +24,17 @@
         .brand{
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
             font-size: 3.5rem;
-            line-height: 1;
             font-weight: 900;
             letter-spacing: 0.03em;
             display: block;
-            /*position: fixed;*/
             text-align: center;
             margin: 0 auto;
             width: 100%;
             height: 100px;
             color: white;
-            backgroundColor: black;
-            background-attachment: fixed;
-            max-width: 960px;
-            min-width: 200px;
-            /*word-break: break-word;*/
-        }
+            background: black;
+            min-width: 330px;
+            
     </style>
 </head>
 <body>
