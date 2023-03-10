@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>SertSale</title>
+    <style>
+        .brand{
+            font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            letter-spacing: 0.03em;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            height: 100px;
+            color: white;
+            background: black;
+            min-width: 330px;
+        } 
+    </style>
 </head>
 <body>
+    <div class="brand" style="backgroundColor: black;">SertSale</div>
 <?php
 
 require_once __DIR__ . '/autoload.php';
