@@ -22,8 +22,9 @@
     </div>
     <script>
         var webApp = window.Telegram.WebApp;
-        var style = webApp.themeParams;     
-        
+        var style = webApp.themeParams;
+        var data = webApp.initDataUnsafe;    
+        document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
               
         document.body.style.backgroundColor = style.bg_color;
