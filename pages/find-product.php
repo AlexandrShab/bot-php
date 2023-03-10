@@ -34,7 +34,7 @@
             color: white;
             background: black;
             min-width: 330px;
-            
+        } 
     </style>
 </head>
 <body>
