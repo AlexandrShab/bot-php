@@ -12,14 +12,14 @@
             font-size: 2.5rem;
             line-height: 1.133;
             font-weight: 600;
-            letter-spacing: .018em;
+            letter-spacing: .02em;
             display: block;
             text-align: center;
             margin: 0 auto;
             width: 90%;
             max-width: 960px;
-            min-width: 100px;
-            word-break: break-word;
+            min-width: 300px;
+            
         }
         .brand{
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
@@ -40,7 +40,7 @@
 <body>
     <div class="brand" style="backgroundColor: black;">SertSale</div>
     <div id="content">
-        <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
+        <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="height:40px;margin:20px">
                 <input style="width:90%; 
