@@ -25,7 +25,6 @@
 </head>
 <body>
     <div class="brand" style="backgroundColor: black;">SertSale</div>
-    
 <?php
 
 require_once __DIR__ . '/autoload.php';
@@ -215,8 +214,8 @@ function csvToBase($base)
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          webApp.ready();      
-         document.querySelectorAll('#content').style.backgroundColor = style.bg_color;
-         document.querySelectorAll('#content').style.color = style.text_color;
+         document.body.style.backgroundColor = style.bg_color;
+         document.body.style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
