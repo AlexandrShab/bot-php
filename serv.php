@@ -25,6 +25,7 @@
 </head>
 <body>
     <div class="brand" style="backgroundColor: black;">SertSale</div>
+    <div id="content">
 <?php
 
 require_once __DIR__ . '/autoload.php';
@@ -207,26 +208,23 @@ function csvToBase($base)
     }
 }
 ?>
+    </div>
  <script>
-        var webApp = window.Telegram.WebApp;
-        var style = webApp.themeParams;     
-        
+       var webApp = window.Telegram.WebApp;
+        var style = webApp.themeParams;
+        var data = webApp.initDataUnsafe;    
+        //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-              
-        document.body.style.backgroundColor = style.bg_color;
-        document.body.style.color = style.text_color;
+         webApp.ready();      
+         document.querySelectorAll('#content').style.backgroundColor = style.bg_color;
+         document.querySelectorAll('#content').style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
         //document.button.style.color = style.button_text_color;
-   webApp.ready();
-       /*  const styles ={"bg_color":"#ffffff",
-                "button_color":"#40a7e3",
-                "button_text_color":"#ffffff",
-                "hint_color":"#999999",
-                "link_color":"#168acd",
-                "secondary_bg_color":"#f1f1f1",
-                "text_color":"#000000"};*/
+        webApp.BackButton.show();
+        webApp.MainButton.setText('Написать эксперту');
+        webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
     </script>
 </body>
 </html>
