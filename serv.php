@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="brand" style="backgroundColor: black;">SertSale</div>
-    <div id="content">
+    
 <?php
 
 require_once __DIR__ . '/autoload.php';
@@ -208,7 +208,6 @@ function csvToBase($base)
     }
 }
 ?>
-    </div>
  <script>
        var webApp = window.Telegram.WebApp;
         var style = webApp.themeParams;
