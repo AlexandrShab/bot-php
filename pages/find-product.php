@@ -11,7 +11,7 @@
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
             font-size: 2.5rem;
             line-height: 1.133;
-            font-weight: 400;
+            font-weight: 600;
             letter-spacing: .018em;
             display: block;
             text-align: center;
