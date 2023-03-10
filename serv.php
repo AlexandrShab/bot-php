@@ -213,8 +213,8 @@ function csvToBase($base)
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         webApp.ready();      
-         document.body.style.backgroundColor = style.bg_color;
+         
+         document.body.style.background = style.bg_color;
          document.body.style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
        // document.button.style.backgroundColor = style.button_color;
@@ -223,6 +223,7 @@ function csvToBase($base)
         webApp.BackButton.show();
         webApp.MainButton.setText('Написать эксперту');
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
+        webApp.ready();      
     </script>
 </body>
 </html>
