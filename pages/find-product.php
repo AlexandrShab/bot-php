@@ -28,20 +28,21 @@
             font-weight: 900;
             letter-spacing: 0.03em;
             display: block;
+            /*position: fixed;*/
             text-align: center;
             margin: 0 auto;
             width: 100%;
-            height: 10%;
+            height: 100px;
             color: white;
             backgroundColor: black;
             max-width: 960px;
             min-width: 200px;
-            word-break: break-word;
+            /*word-break: break-word;*/
         }
     </style>
 </head>
 <body>
-    <div class="brand">SertSale</div>
+    <div class="brand" style="backgroundColor: black;">SertSale</div>
     <div id="content">
         <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
