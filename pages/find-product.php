@@ -21,9 +21,26 @@
             min-width: 100px;
             word-break: break-word;
         }
+        .brand{
+            font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 3.5rem;
+            line-height: 1;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            color:white;
+            backgroundColor: black;
+            max-width: 960px;
+            min-width: 200px;
+            word-break: break-word;
+        }
     </style>
 </head>
 <body>
+    <div class="brand">SertSale</div>
     <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
     <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
         <div style="height:40px;margin:20px">
