@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>SertSale</title>
+    <style>
+        .main-title {
+            font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="margin: 20px;">Поиск товара</h1>
+    <h1 class="main-title" style="margin: 20px;">Поиск товара</h1>
     <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
         <div style="height:40px;margin:20px">
             <input style="width:90%; 
