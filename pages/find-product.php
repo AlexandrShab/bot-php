@@ -60,7 +60,7 @@
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
         
-        webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
+        //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
 /*        var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;    
