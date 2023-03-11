@@ -55,11 +55,11 @@
         </div>
     </div>
     <script>
-        var webApp = window.Telegram.WebApp;webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
-        webApp.BackButton.show();
-        webApp.MainButton.show();
+        var webApp = window.Telegram.WebApp;
+        //webApp.BackButton.show();
+        webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
         webApp.MainButton.setText('Написать эксперту');
-        
+        webApp.MainButton.show();
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
 /*        var style = webApp.themeParams;
