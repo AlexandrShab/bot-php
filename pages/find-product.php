@@ -37,7 +37,7 @@
             min-width: 330px;
         } 
         #content {
-            height: 150px;
+            height: 200px;
         }
     </style>
 </head>
@@ -50,7 +50,7 @@
                 <input style="width:90%; 
                     height: 100%; font: size 20px;" 
                     type="text" name="query" placeholder="Введите название товара"><br/><br/>
-                <button class="btn" style="margin-right:20px;padding:10px; height: 100%;" type="submit">Проверить</button>
+                <button class="btn" style="margin-right:20px;padding:10px; height: 100%; width:90%" type="submit">Проверить</button>
             </div>
         </form>
         <div id="list">
