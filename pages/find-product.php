@@ -67,14 +67,11 @@
            
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         document.getElementById('content').style.backgroundColor = style.bg_color;
-         document.getElementById('content').style.color = style.text_color;
-        /* document.getElementById('btn').style.backgroundColor = style.button_color;
-         document.getElementById('btn').style.color = style.button_text_color;
-        document.querySelectorAll('button')*/
-        document.button.style.backgroundColor = style.button_color;
-       document.button.style.color = style.button_text_color;
-        //document.querySelectorAll('button')
+         document.getElementById('content').style.backgroundColor = 'pink';//style.bg_color;
+         document.getElementById('content').style.color = 'blue';style.text_color;
+         webApp.MainButton.textColor = 'darkred';//style.button_text_color;
+         webApp.MainButton.color = 'white';style.button_color;
+       
         
        
         
