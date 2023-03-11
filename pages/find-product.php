@@ -31,7 +31,7 @@
             text-align: center;
             margin: 0 auto;
             width: 100%;
-            
+            height:100px;
             color: white;
             background: black;
             min-width: 330px;
@@ -45,7 +45,9 @@
     </style>
 </head>
 <body>
-    <div class="brand" style="backgroundColor: black;">SertSale_bot</div>
+    <div class="brand" style="backgroundColor: black;">
+        <text>SertSale_bot</text>
+    </div>
     <div id="content">
         <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
