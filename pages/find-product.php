@@ -35,6 +35,7 @@
             color: white;
             background: black;
             min-width: 330px;
+            align-items: center;
         } 
         #content {
             height: 200px;
