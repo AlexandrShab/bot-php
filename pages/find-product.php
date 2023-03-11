@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <title>SertSale_bot</title>
+    <title>SertSale</title>
     <style>
         .main-title {
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-    <div class="brand" style="backgroundColor: black;">SertSale</div>
+    <div class="brand" style="backgroundColor: black;">SertSale_bot</div>
     <div id="content">
         <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
@@ -85,7 +85,7 @@
        
         
         webApp.ready();   
-        webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
+        //webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
        /*  const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
                 "button_text_color":"#ffffff",
