@@ -38,6 +38,8 @@
         } 
         #content {
             height: 200px;
+            border: radius 30px;
+            border: solid black 1px;
         }
     </style>
 </head>
