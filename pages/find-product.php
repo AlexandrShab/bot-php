@@ -21,7 +21,7 @@
         webApp.BackButton.show();
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
-         
+        webApp.showConfirm('Подтверждение'); 
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         webApp.ready();   
   
