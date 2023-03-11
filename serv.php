@@ -223,7 +223,7 @@ function csvToBase($base)
         webApp.BackButton.show();
         webApp.MainButton.setText('Написать эксперту');
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
-        webApp.ready();      
+        //webApp.ready();      
     </script>
 </body>
 </html>
