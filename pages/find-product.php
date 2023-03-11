@@ -61,9 +61,10 @@
         var data = webApp.initDataUnsafe;
         webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
         webApp.MainButton.textColor = 'darkred';//style.button_text_color;
+        webApp.MainButton.show();
          webApp.MainButton.color = 'white';//style.button_color;
         webApp.MainButton.setText('Написать эксперту');
-        webApp.MainButton.show();
+        
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
            
