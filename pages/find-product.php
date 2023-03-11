@@ -31,7 +31,7 @@
             text-align: center;
             margin: 0 auto;
             width: 100%;
-            height: 100px;
+            
             color: white;
             background: black;
             min-width: 330px;
