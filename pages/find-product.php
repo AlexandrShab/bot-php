@@ -44,6 +44,9 @@
         }
         .btn {
             justify-self: end;
+            height: 40px;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -55,8 +58,8 @@
         <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="display:grid; justify-content:center;">
-                <input style="width:90%; 
-                    height: 100%; font: size 20px;" 
+                <input style="width:100%; 
+                    height: 100%; font-size: 20px;" 
                     type="text" name="query" placeholder="Введите название товара"><br/><br/>
                 <button class="btn" type="submit">Проверить</button>
             </div>
