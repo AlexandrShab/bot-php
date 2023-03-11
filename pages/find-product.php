@@ -63,22 +63,22 @@
     <script>
         var webApp = window.Telegram.WebApp;
         //webApp.BackButton.show();
-        var style = webApp.themeParams;
+        var styles = webApp.themeParams;
         var data = webApp.initDataUnsafe;
         
         
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
-         webApp.MainButton.color = "#ffaaff";//style.button_color;
-        webApp.MainButton.textColor = "#168acd";//style.button_text_color;
+         webApp.MainButton.color = styles.button_color;//"#ffaaff";
+        webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
         
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
            
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         document.getElementById('content').style.backgroundColor = 'gray';//style.bg_color;
-         document.getElementById('content').style.color = 'black';style.text_color;
+         document.getElementById('content').style.backgroundColor = styles.bg_color;
+         document.getElementById('content').style.color = styles.text_color;
          
        
         
