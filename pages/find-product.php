@@ -36,6 +36,9 @@
             background: black;
             min-width: 330px;
         } 
+        .content {
+            height: 150px;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +57,7 @@
 
         </div>
     </div>
+
     <script>
         var webApp = window.Telegram.WebApp;
         //webApp.BackButton.show();
