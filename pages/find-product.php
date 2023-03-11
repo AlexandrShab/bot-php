@@ -75,8 +75,8 @@
            
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         document.getElementById('content').style.backgroundColor = 'pink';//style.bg_color;
-         document.getElementById('content').style.color = 'blue';style.text_color;
+         document.getElementById('content').style.backgroundColor = 'gray';//style.bg_color;
+         document.getElementById('content').style.color = 'black';style.text_color;
          
        
         
