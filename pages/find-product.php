@@ -59,7 +59,7 @@
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         webApp.ready();      
+            
          document.querySelectorAll('#content').style.backgroundColor = style.bg_color;
          document.querySelectorAll('#content').style.color = style.text_color;
         document.querySelectorAll('button').style.backgroundColor = style.button_color;
@@ -67,9 +67,11 @@
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
         //document.button.style.color = style.button_text_color;
         webApp.BackButton.show();
-        webApp.MainButton.setText('Написать эксперту');
-        webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
 
+        webApp.MainButton.setText('Написать эксперту');
+         webApp.MainButton.show();
+        webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
+        webApp.ready();   
   
        /*  const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
