@@ -12,7 +12,7 @@
             font-size: 3.5rem;
             font-weight: 900;
             letter-spacing: 0.03em;
-            display: block;
+            display: grid;
             text-align: center;
             margin: 0 auto;
             width: 100%;
@@ -20,6 +20,7 @@
             color: white;
             background: black;
             min-width: 330px;
+            align-items:center;
         } 
     </style>
 </head>
