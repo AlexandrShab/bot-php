@@ -36,7 +36,7 @@
             background: black;
             min-width: 330px;
         } 
-        .content {
+        #content {
             height: 150px;
         }
     </style>
