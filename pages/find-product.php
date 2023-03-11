@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
-    <title>SertSale</title>
+    <title>SertSale_bot</title>
     <style>
         .main-title {
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
@@ -24,7 +24,7 @@
         }
         .brand{
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 3.5rem;
+            font-size: 3.0rem;
             font-weight: 900;
             letter-spacing: 0.03em;
             display: block;
