@@ -7,7 +7,8 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         var webApp = window.Telegram.WebApp;
-        var style = webApp.themeParams;
+        webApp.BackButton.show();
+        /*var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
@@ -18,13 +19,13 @@
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
         //document.button.style.color = style.button_text_color;
-        webApp.BackButton.show();
+        
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
         webApp.showConfirm('Подтверждение'); 
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         webApp.ready();   
-  
+  */
        /*  const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
                 "button_text_color":"#ffffff",
