@@ -9,11 +9,11 @@
     <style>
         .brand{
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: 0.03em;
             display: grid;
-            text-align: center;
+            justify-content: center;
             margin: 0 auto;
             width: 100%;
             height: 100px;
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div class="brand" style="backgroundColor: black;">SertSale</div>
+    <div class="brand" style="backgroundColor: black;">SertSale_bot</div>
 <?php
 
 require_once __DIR__ . '/autoload.php';
