@@ -60,6 +60,8 @@
         var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;
         webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
+        webApp.MainButton.textColor = 'darkred';//style.button_text_color;
+         webApp.MainButton.color = 'white';style.button_color;
         webApp.MainButton.setText('Написать эксперту');
         webApp.MainButton.show();
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
@@ -69,8 +71,7 @@
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          document.getElementById('content').style.backgroundColor = 'pink';//style.bg_color;
          document.getElementById('content').style.color = 'blue';style.text_color;
-         webApp.MainButton.textColor = 'darkred';//style.button_text_color;
-         webApp.MainButton.color = 'white';style.button_color;
+         
        
         
        
