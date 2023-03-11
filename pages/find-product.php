@@ -42,6 +42,9 @@
             border-radius:  30px;
             /*border: solid black 1px;*/
         }
+        .btn {
+            justify-self: end;
+        }
     </style>
 </head>
 <body>
@@ -51,11 +54,11 @@
     <div id="content">
         <h1 class="main-title">Поиск товара</h1>
         <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
-            <div style="height:40px;margin:20px">
+            <div style="display:grid; justify-content:center;">
                 <input style="width:90%; 
                     height: 100%; font: size 20px;" 
                     type="text" name="query" placeholder="Введите название товара"><br/><br/>
-                <button class="btn" style="margin-right:20px;padding:10px; height: 100%; width:91%" type="submit">Проверить</button>
+                <button class="btn" type="submit">Проверить</button>
             </div>
         </form>
         <div id="list">
