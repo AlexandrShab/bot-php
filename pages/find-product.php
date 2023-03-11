@@ -42,7 +42,7 @@
             border-radius:  30px;
             /*border: solid black 1px;*/
         }
-        .btn {
+        #btn {
             justify-self: end;
             height: 40px;
             padding: 10px;
@@ -61,7 +61,7 @@
                 <input style="width:100%; 
                     height: 100%; font-size: 20px;" 
                     type="text" name="query" placeholder="Введите название товара"><br/><br/>
-                <button class="btn" type="submit">Проверить</button>
+                <button id="btn" type="submit">Проверить</button>
             </div>
         </form>
         <div id="list">
@@ -75,12 +75,12 @@
         var styles = webApp.themeParams;
         var data = webApp.initDataUnsafe;
         
-        
+        /*
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
          webApp.MainButton.color = styles.button_color;//"#ffaaff";
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
-        
+        */
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
            
@@ -88,7 +88,8 @@
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          document.getElementById('content').style.backgroundColor = styles.bg_color;
          document.getElementById('content').style.color = styles.text_color;
-         
+         document.getElementById('btn').style.backgroundColor = styles.bg_color;
+         document.getElementById('btn').style.color = styles.text_color;
        
         
        
