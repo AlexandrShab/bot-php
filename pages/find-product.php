@@ -59,7 +59,7 @@
         //webApp.BackButton.show();
         var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;
-        //webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
+        
         
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
@@ -79,7 +79,7 @@
        
         
         webApp.ready();   
-  
+        webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
        /*  const styles ={"bg_color":"#ffffff",
                 "button_color":"#40a7e3",
                 "button_text_color":"#ffffff",
