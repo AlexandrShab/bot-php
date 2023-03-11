@@ -19,9 +19,9 @@
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
         //document.button.style.color = style.button_text_color;
         webApp.BackButton.show();
-
+        webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
-         webApp.MainButton.show();
+         
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         webApp.ready();   
   
