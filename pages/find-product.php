@@ -63,8 +63,8 @@
         
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
-         webApp.MainButton.color = 'white';//style.button_color;
-        webApp.MainButton.textColor = 'darkred';//style.button_text_color;
+         webApp.MainButton.color = "#ffffff";//style.button_color;
+        webApp.MainButton.textColor = "#168acd";//style.button_text_color;
         
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
