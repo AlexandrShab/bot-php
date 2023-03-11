@@ -55,7 +55,7 @@
         <text>SertSale_bot</text>
     </div>
     <div id="content">
-        <h3 class="main-title">Страница администратора</h3>
+        <h4 class="main-title">Страница администратора</h4>
        <!-- <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="display:grid; justify-content:center;">
                 <input style="width:100%; 
