@@ -10,7 +10,7 @@
     <style>
         .main-title {
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 2.5rem;
+            font-size: 1.2rem;
             line-height: 1.133;
             font-weight: 600;
             letter-spacing: .02em;
