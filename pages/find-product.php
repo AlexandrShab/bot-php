@@ -24,7 +24,7 @@
         }
         .brand{
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 3.0rem;
+            font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: 0.03em;
             display: block;
