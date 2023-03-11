@@ -58,6 +58,7 @@
         var webApp = window.Telegram.WebApp;
         webApp.BackButton.show();
         webApp.MainButton.show();
+        webApp.showConfirm('Подтверждение'); 
 /*        var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
@@ -72,7 +73,7 @@
         webApp.BackButton.show();
         webApp.MainButton.show();
         webApp.MainButton.setText('Написать эксперту');
-        webApp.showConfirm('Подтверждение'); 
+        
         webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         webApp.ready();   
   */
