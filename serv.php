@@ -212,7 +212,7 @@ function csvToBase($base)
        var webApp = window.Telegram.WebApp;
        webApp.BackButton.show();
         var style = webApp.themeParams;
-        var data = webApp.initDataUnsafe;    
+        //var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
         /* 
