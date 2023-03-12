@@ -57,7 +57,7 @@ $tg_user = getTelegramUserData();
         } 
         #content {
             
-            height: 70vh;
+            height: 100%;
             /*border: solid black 1px;*/
         }
         #btn {
@@ -113,13 +113,13 @@ $tg_user = getTelegramUserData();
                     color:black;\">{$first_name}</name>";
           }
         $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Support</a>";
-       print_r($html); 
+       //print_r($html); 
     }else {
         $bot_username = BOT_USERNAME;
         $authItem = new AuthItem;
         $html = $authItem->content;
         $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Support</a>";
-        print_r($html);
+        //print_r($html);
     }
     
 ?>
@@ -153,9 +153,9 @@ if (isset($_GET['method']))
     {
         $base = new BaseAPI;
         $users = $base->getUsers();
-        echo "тут работало";
-        var_dump($users);
-        $output = "<div id=\"list\">
+        
+        
+        $html = "<div id=\"list\">
         <table>
             <thead>
                 <th>
@@ -189,7 +189,7 @@ if (isset($_GET['method']))
             {
                 $adm = "<strong>Да</strong>";
             }
-            $output .= 
+            $html .= 
                 "<tr>
                     <td>
                         $num
@@ -214,16 +214,16 @@ if (isset($_GET['method']))
                     </td>
                 </tr>";
             }
-            $output = "</tbody>
+            $html = "</tbody>
                 </table>
             </div>";
             
             
         
-        print_r($output);
+       
     }
 
-
+ print_r($html);
 }
 //~~~~~~~~~~~~~
 
