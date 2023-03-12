@@ -134,15 +134,23 @@ $tg_user = getTelegramUserData();
 // ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
 
 //~~~~~~~~~~~~~
-if($_SERVER["REQUEST_URI"] == '/admin') 
-{
+if (isset($_GET['method']))
+{ $_GET['method'] == 'getUsers' {
+    $base = new BaseAPI;
+    $users = $base->getUsers();
+    $output = '';
+    foreach ($users as $user) {
+        $output .= "$user->id $user->first_name $user->last_name $user->username $user->date";
+        if($user->is_admin == '1')
+        {
+            $output .= " <strong>Админ</strong><br/>";
+        }
+    }
+    print_r($output);
+  }
 
-      require_once __DIR__ . '/pages/admin-page.php';
-       
-      exit;
-    
+
 }
-
 //~~~~~~~~~~~~~
 
 
