@@ -38,6 +38,17 @@ class User
         
         return true;
     }
+    public function checkAdmin()
+    {
+        $base = new Connect;
+        $query = "SELECT is_admin FROM users WHERE id ='$this->id' LIMIT 1";
+        
+        $data = $base->prepare($query);
+        $data->execute();
+        $arr = $data->fetch(PDO::FETCH_ASSOC);
+        $this->isAdmin = $arr['is_admin']; 
+        return $this->isAdmin;
+    }
     public function update($arrUser)
     {
         $base = new Connect;

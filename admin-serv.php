@@ -1,19 +1,19 @@
 <auth>
-<script async src="https://telegram.org/js/telegram-widget.js?19\" 
+    <script async src="https://telegram.org/js/telegram-widget.js?19\" 
                         data-telegram-login="ByStatBot" 
                         data-size="medium" 
                         data-auth-url="http://topbots.site/check_authorization.php" 
                         data-request-access="write"
                         style="padding-top: 16px; float: right;"
                         ></script>
-                    </auth>
+</auth>
 <?php
 header('Access-Control-Allow-Origin: *');
 //require_once __DIR__ . '/classes/request.php';
 
 require_once __DIR__ . '/autoload.php';
-//var_dump($_COOKIE);
-$html = '<span> </span>';
+var_dump($_COOKIE);
+
 define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
 /*
 if ($_GET['logout']) {
@@ -101,9 +101,9 @@ function getTelegramUserData() {
       {
           
           $user->addTobase();
-      }
+      }*/
       $user->checkAdmin();
-        */
+        
       return $user;
     }
     return false;
