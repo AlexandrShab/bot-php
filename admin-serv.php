@@ -111,8 +111,7 @@ $tg_user = getTelegramUserData();
     <div class="brand" style="backgroundColor: black;">
         <text>SertSale_bot</text>
     </div>
-    <div id="content">
-        <p1 class="main-title">Страница администратора</p1>
+    
 <?php
 
 
@@ -124,6 +123,10 @@ if($_SERVER["REQUEST_URI"] == '/admin')
 {
     if ($isAdmin)
    {
+?>
+    <div id="content">
+        <p1 class="main-title">Страница администратора</p1>
+<?php
       require_once __DIR__ . '/pages/admin-page.php';
        
       exit;
