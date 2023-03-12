@@ -1,5 +1,24 @@
 <?php
-//header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: *');
+?>
+
+<?php
+//require_once __DIR__ . '/classes/request.php';
+
+require_once __DIR__ . '/autoload.php';
+//var_dump($_COOKIE);
+$html = "<span></span>";
+define('BOT_USERNAME', 'ByStatBot'); // place username of your bot here
+
+if (isset($_GET['logout'])) {
+  setcookie('tg_user', '');
+  header('Location: admin-serv.php');
+}
+
+//require_once __DIR__ . '/pages/header.php';
+
+$tg_user = getTelegramUserData();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,23 +80,6 @@
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
 <?php
-//require_once __DIR__ . '/classes/request.php';
-
-require_once __DIR__ . '/autoload.php';
-//var_dump($_COOKIE);
-$html = "<span></span>";
-define('BOT_USERNAME', 'ByStatBot'); // place username of your bot here
-
-if (isset($_GET['logout'])) {
-  setcookie('tg_user', '');
-  header('Location: admin-serv.php');
-}
-
-//require_once __DIR__ . '/pages/header.php';
-
-$tg_user = getTelegramUserData();
-
-
 
    
 
@@ -115,16 +117,13 @@ if ($tg_user !== false) {
 
 //~~~~~~~~~~~~~~~~~Разметка страницы~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-//header('Content-Type: text/html');
+header('Content-Type: text/html');
 //require_once __DIR__ . '/pages/header.php';
-/*
-$html .= "</div>";
 
-$html .= "<ul class=\"bar\">";
-  if ($isAdmin)
+
+ /* if ($isAdmin)
     {
-      $menu = new Menu;
-      $html .= $menu->content;
+      
     }
 
 print_r($html);*/
