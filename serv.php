@@ -211,18 +211,18 @@ function csvToBase($base)
  <script>
        var webApp = window.Telegram.WebApp;
        webApp.MainButton.show();
-        var style = webApp.themeParams;
+        var styles = webApp.themeParams;
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-        /*
-         document.body.style.background = style.bg_color;
-         document.body.style.color = style.text_color;
-        document.querySelectorAll('button').style.backgroundColor = style.button_color;
+        
+         document.body.style.background = styles.bg_color;
+         document.body.style.color = styles.text_color;
+        document.querySelectorAll('button').style.backgroundColor = styles.button_color;
        // document.button.style.backgroundColor = style.button_color;
-       document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
+       document.querySelectorAll('button').style.backgroundColor = styles.button_text_color;
         //document.button.style.color = style.button_text_color;
-        */
+        
         webApp.onEvent('mainButtonClicked', function(){
                 webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
                 webApp.openTelegramLink('https://t.me/blrAlex');
