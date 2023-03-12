@@ -6,11 +6,12 @@ require_once __DIR__ . '/autoload.php';
 //var_dump($_COOKIE);
 $html = '<span> </span>';
 define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
-
+/*
 if ($_GET['logout']) {
   setcookie('tg_user', '');
   header('Location: admin-serv.php');
 }
+*/
 //require_once __DIR__ . '/pages/header.php';
 
 $tg_user = getTelegramUserData();
