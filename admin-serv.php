@@ -56,7 +56,7 @@ $tg_user = getTelegramUserData();
             align-items: center;
         } 
         #content {
-            
+            margin:0 auto;
             height: 100%;
             /*border: solid black 1px;*/
         }
