@@ -77,7 +77,7 @@
        -->
        <div class="admin-menu">
             <div class="menu-item">
-                <text>Пользователи бота</text>
+                <a href="https://sertbot.shinny-mir.by/admin-page.php?method=getUsers"><text>Пользователи бота</text></a>
             </div>
             <div class="menu-item">
                 <text>Администраторы бота</text>
