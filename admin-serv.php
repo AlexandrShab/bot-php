@@ -140,14 +140,15 @@ $tg_user = getTelegramUserData();
     <div id="content">
         <p1 class="main-title">Вам необходимо авторизоваться, либо у вас недостаточно прав...</p1><br/><br/>
 
-
-<?php        
+    
+<?php
+    exit;        
     }
 
 // ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
 
 //~~~~~~~~~~~~~
-if (isset($_GET['method']) && $isAdmin)
+if (isset($_GET['method']))
 { 
     if($_GET['method'] == 'getUsers') 
     {
