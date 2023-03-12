@@ -74,13 +74,13 @@
         //webApp.BackButton.show();
         var styles = webApp.themeParams;
         var data = webApp.initDataUnsafe;
-        
-        /*
         webApp.MainButton.show();
+        
+        
         webApp.MainButton.setText('Написать эксперту');
          webApp.MainButton.color = styles.button_color;//"#ffaaff";
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
-        */
+        /**/
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение'); 
            
