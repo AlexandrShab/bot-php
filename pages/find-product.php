@@ -82,7 +82,7 @@
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
         /**/
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
-        //webApp.showConfirm('Подтверждение'); 
+        //
            
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
@@ -92,6 +92,7 @@
          document.getElementById('btn').style.color = styles.text_color;
             
          webApp.onEvent('mainButtonClicked', function(){
+                webApp.showConfirm('Подтверждение'); 
 	            webApp.sendData("some string that we need to send"); 
 	        //при клике на основную кнопку отправляем данные в строковом виде
             });
