@@ -56,8 +56,8 @@ $tg_user = getTelegramUserData();
             align-items: center;
         } 
         #content {
-            height: 200px;
-            border-radius:  30px;
+            height: 90%;
+            
             /*border: solid black 1px;*/
         }
         #btn {
