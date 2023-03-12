@@ -1,15 +1,13 @@
 <?php
 class AuthItem
 {
-    public $content = "<auth class=\"dropdown\">
+    public $content = "<auth>
             <script async src=\"https://telegram.org/js/telegram-widget.js?19\" 
-                        data-telegram-login=\"ByTopBot\" 
+                        data-telegram-login=\"ByStatBot\" 
                         data-size=\"medium\" 
-                        data-auth-url=\"http://topbots.site/check_authorization.php\" 
+                        data-auth-url=\"http://sertbot.shinny-mir.by/check_authorization.php\" 
                         data-request-access=\"write\"
                         style=\"padding-top: 16px; float: right;\"
                         ></script>
-            <div class=\"dropdown-content help\">
-                        
-        </auth> ";
+                    </auth> ";
 }

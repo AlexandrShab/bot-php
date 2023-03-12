@@ -15,7 +15,7 @@ header('Access-Control-Allow-Origin: *');
 
 require_once __DIR__ . '/autoload.php';
 //var_dump($_COOKIE);
-
+$html = "<span></span>";
 define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
 
 if (isset($_GET['logout'])) {
@@ -28,7 +28,7 @@ if (isset($_GET['logout'])) {
 $tg_user = getTelegramUserData();
 var_dump($tg_user);
 //~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
-/*if ($tg_user->isAdmin == '1'){$isAdmin = true;}
+if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 
 
 if ($tg_user !== false) {
