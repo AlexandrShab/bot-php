@@ -133,6 +133,23 @@ $tg_user = getTelegramUserData();
 ?>
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
+        <div class="admin-menu">
+            <div class="menu-item">
+                <a href="/?method=getUsers"><text>Пользователи бота</text></a>
+            </div>
+            <div class="menu-item">
+                <text>Администраторы бота</text>
+            </div>
+            <div class="menu-item">
+                <text>Запросы по поиску</text>
+            </div>
+            <div class="menu-item">
+                <text>Акции и участники</text>
+            </div>
+            <div class="menu-item">
+                <text>Редактор товаров базы</text>
+            </div>
+       </div>
 <?php
     }else
     {
