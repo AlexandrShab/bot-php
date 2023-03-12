@@ -85,14 +85,14 @@ $tg_user = getTelegramUserData();
         $html .= "<a href=\"/admin-serv.php?logout=1\" 
             class=\"dropdown\" style=\"float:right;\">
             <img src=\"/public/img/door1.jpg\"
-                style=\"height:40px;margin-right:10px;\">
+                style=\"height:32px;margin-right:10px;\">
             </a>";
         
      if (isset($tg_user->photo_url)) {
         $photo_url = htmlspecialchars($tg_user->photo_url);
         //$photo_url = $tg_user['photo_url'];
-        $html .= "<img src=\"{$photo_url}\" style=\"width:40px; 
-                border-radius:20px;float:right;margin-right:10px;\">";
+        $html .= "<img src=\"{$photo_url}\" style=\"width:32px; 
+                border-radius:16px;float:right;margin-right:10px;\">";
         
       }else
           {
