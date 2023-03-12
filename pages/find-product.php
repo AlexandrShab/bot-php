@@ -92,7 +92,7 @@
          document.getElementById('btn').style.color = styles.text_color;
             
          webApp.onEvent('mainButtonClicked', function(){
-                webApp.showConfirm('Подтверждение');
+                webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
                 webApp.openTelegramLink('https://t.me/blrAlex');
 	            webApp.sendData("some string that we need to send");  
 	        //при клике на основную кнопку отправляем данные в строковом виде
