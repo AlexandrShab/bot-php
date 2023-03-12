@@ -90,7 +90,7 @@ if($_SERVER["REQUEST_URI"] == '/admin')
 //~~~~~~~~~~~~~
 
 
-exit;
+//exit;
 
 function getTelegramUserData() {
     if (isset($_COOKIE['tg_user'])) {
