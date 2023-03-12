@@ -70,59 +70,52 @@ $tg_user = getTelegramUserData();
     
 </head>
 <body>
+<?php
+ 
+    $html = "<span></span>";
+       
+    
+    //~~~~~~~~~
+    if ($tg_user !== false) {
+        if ($tg_user->isAdmin == '1'){$isAdmin = true;}//~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
+        //var_dump($tg_user);
+      $first_name = htmlspecialchars($tg_user->first_name);
+      //$html .= "<name style=\"float:right;\">{$first_name}</name>";
+      
+        $html .= "<a href=\"/admin-serv.php?logout=1\" 
+            class=\"dropdown\" style=\"float:right;\">
+            <img src=\"/public/img/door1.jpg\"
+                style=\"height:40px;margin-right:10px;\">
+            </a>";
+        
+     if (isset($tg_user->photo_url)) {
+        $photo_url = htmlspecialchars($tg_user->photo_url);
+        //$photo_url = $tg_user['photo_url'];
+        $html .= "<img src=\"{$photo_url}\" style=\"width:40px; 
+                border-radius:20px;float:right;margin-right:10px;\">";
+        
+      }else
+          {
+              $html .= "<name style=\"float:right;margin:10px;
+                    color:black;\">{$first_name}</name>";
+          }
+       print_r($html); 
+    }else {
+        $bot_username = BOT_USERNAME;
+        $authItem = new AuthItem;
+        $html = $authItem->content;
+        print_r($html);
+    }
+    
+?>
     <div class="brand" style="backgroundColor: black;">
         <text>SertSale_bot</text>
     </div>
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
 <?php
-$html = "<span></span>";
-   
-
-//~~~~~~~~~
-if ($tg_user !== false) {
-    if ($tg_user->isAdmin == '1'){$isAdmin = true;}//~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
-    //var_dump($tg_user);
-  $first_name = htmlspecialchars($tg_user->first_name);
-  //$html .= "<name style=\"float:right;\">{$first_name}</name>";
-  
-    $html .= "<a href=\"/admin-serv.php?logout=1\" 
-        class=\"dropdown\" style=\"float:right;\">
-        <img src=\"/public/img/door1.jpg\"
-            style=\"height:40px;margin-right:10px;\">
-        </a>";
-    
- if (isset($tg_user->photo_url)) {
-    $photo_url = htmlspecialchars($tg_user->photo_url);
-    //$photo_url = $tg_user['photo_url'];
-    $html .= "<img src=\"{$photo_url}\" style=\"width:40px; 
-            border-radius:20px;float:right;margin-right:10px;\">";
-    
-  }else
-      {
-          $html .= "<name style=\"float:right;margin:10px;
-                color:black;\">{$first_name}</name>";
-      }
-   print_r($html); 
-}else {
-    $bot_username = BOT_USERNAME;
-    $authItem = new AuthItem;
-    $html = $authItem->content;
-    print_r($html);
-}
-
-//~~~~~~~~~~~~~~~~~Разметка страницы~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
-
-
- /* if ($isAdmin)
-    {
-      
-    }
-
-print_r($html);*/
 
 // ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
 
