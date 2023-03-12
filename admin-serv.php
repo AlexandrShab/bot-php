@@ -113,7 +113,7 @@ $tg_user = getTelegramUserData();
     </div>
     
 <?php
-    if ($isAdmin)
+    if (isset($isAdmin) && $isAdmin)
    {
 ?>
     <div id="content">
