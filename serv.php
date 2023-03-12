@@ -22,6 +22,15 @@
             min-width: 330px;
             align-items:center;
         } 
+        #btn {
+            justify-self: end;
+            height: 40px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #btn:active{
+            backgroundColor:gray;
+        }
     </style>
 </head>
 <body>

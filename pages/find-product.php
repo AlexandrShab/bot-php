@@ -48,7 +48,7 @@
             padding: 10px;
             border-radius: 5px;
         }
-        #btn:сlick{
+        #btn:active{
             backgroundColor:gray;
         }
     </style>
