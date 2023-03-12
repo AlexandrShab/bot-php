@@ -167,7 +167,7 @@ function getTelegramUserData() {
   ?>
         
      </div><!-- конец класса content-->
-        <p1 class="main-title"><a href="https:/t.me/AlexanderShab">Обратиться к разработчику</a></p1>
+        <a class="main-title" href="https:/t.me/AlexanderShab">Обратиться к разработчику</a>
     
 </body>
 </html>
