@@ -99,12 +99,13 @@ $tg_user = getTelegramUserData();
               $html .= "<name style=\"float:right;margin:10px;
                     color:black;\">{$first_name}</name>";
           }
-        $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Обратиться к разработчику</a>";
+        $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Написать разработчику</a>";
        print_r($html); 
     }else {
         $bot_username = BOT_USERNAME;
         $authItem = new AuthItem;
         $html = $authItem->content;
+        $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Написать разработчику</a>";
         print_r($html);
     }
     
