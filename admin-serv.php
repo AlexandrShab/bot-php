@@ -18,7 +18,7 @@ require_once __DIR__ . '/autoload.php';
 
 define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
 
-if ($_GET['logout']) {
+if (isset($_GET['logout'])) {
   setcookie('tg_user', '');
   header('Location: admin-serv.php');
 }
