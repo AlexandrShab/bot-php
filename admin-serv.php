@@ -165,9 +165,9 @@ function getTelegramUserData() {
     return false;
   }
   ?>
-        <p1 class="main-title"><a href="https:/t.me/AlexanderShab">Обратиться к разработчику</a></p1>
-     </div><!-- конец класса content-->
         
+     </div><!-- конец класса content-->
+        <p1 class="main-title"><a href="https:/t.me/AlexanderShab">Обратиться к разработчику</a></p1>
     
 </body>
 </html>
