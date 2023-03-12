@@ -57,7 +57,7 @@ if ($tg_user !== false) {
     $html = $authItem->content;
 
 }
-*/
+
 //~~~~~~~~~~~~~~~~~Разметка страницы~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //header('Content-Type: text/html');
