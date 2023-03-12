@@ -28,7 +28,7 @@
             padding: 10px;
             border-radius: 5px;
         }
-        #btn:active{
+        #btn: active{
             backgroundColor:gray;
         }
     </style>
