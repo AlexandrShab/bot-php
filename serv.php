@@ -29,7 +29,7 @@
             border-radius: 5px;
         }
         #btn: active{
-            backgroundColor:gray;
+            background:gray;
         }
     </style>
 </head>
