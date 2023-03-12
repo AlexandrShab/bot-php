@@ -30,6 +30,7 @@ $tg_user = getTelegramUserData();
 //~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
 if(isset($tg_user))
 {
+    $tg_user->checkAdmin();
     if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 }
 //~~~~~~~~~
