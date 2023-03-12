@@ -55,7 +55,7 @@ if ($tg_user !== false) {
     $bot_username = BOT_USERNAME;
     $authItem = new AuthItem;
     $html = $authItem->content;
-
+    print_r($html);
 }
 
 //~~~~~~~~~~~~~~~~~Разметка страницы~~~~~~~~~~~~~~~~~~~~~~~~~~~
