@@ -135,19 +135,21 @@ $tg_user = getTelegramUserData();
 
 //~~~~~~~~~~~~~
 if (isset($_GET['method']))
-{ $_GET['method'] == 'getUsers' {
-    $base = new BaseAPI;
-    $users = $base->getUsers();
-    $output = '';
-    foreach ($users as $user) {
-        $output .= "$user->id $user->first_name $user->last_name $user->username $user->date";
-        if($user->is_admin == '1')
-        {
-            $output .= " <strong>Админ</strong><br/>";
+{ 
+    if($_GET['method'] == 'getUsers') 
+    {
+        $base = new BaseAPI;
+        $users = $base->getUsers();
+        $output = '';
+        foreach ($users as $user) {
+            $output .= "$user->id $user->first_name $user->last_name $user->username $user->date";
+            if($user->is_admin == '1')
+            {
+                $output .= " <strong>Админ</strong><br/>";
+            }
         }
+        print_r($output);
     }
-    print_r($output);
-  }
 
 
 }
