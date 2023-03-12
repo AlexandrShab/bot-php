@@ -90,7 +90,11 @@
          document.getElementById('content').style.color = styles.text_color;
          document.getElementById('btn').style.backgroundColor = styles.bg_color;
          document.getElementById('btn').style.color = styles.text_color;
-       
+            
+         webApp.onEvent('mainButtonClicked', function(){
+	            webApp.sendData("some string that we need to send"); 
+	        //при клике на основную кнопку отправляем данные в строковом виде
+            });
         
        
         
