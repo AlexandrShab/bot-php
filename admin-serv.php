@@ -99,6 +99,7 @@ $tg_user = getTelegramUserData();
               $html .= "<name style=\"float:right;margin:10px;
                     color:black;\">{$first_name}</name>";
           }
+        $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Обратиться к разработчику</a>";
        print_r($html); 
     }else {
         $bot_username = BOT_USERNAME;
@@ -167,7 +168,7 @@ function getTelegramUserData() {
   ?>
         
      </div><!-- конец класса content-->
-        <a class="main-title" href="https:/t.me/AlexanderShab">Обратиться к разработчику</a>
+        
     
 </body>
 </html>
