@@ -56,7 +56,7 @@
     </div>
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
-       <!-- <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
+       <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="display:grid; justify-content:center;">
                 <input style="width:100%; 
                     height: 100%; font-size: 20px;" 
@@ -71,30 +71,28 @@
     </div>
 
     <script>
-        var webApp = window.Telegram.WebApp;
-        //webApp.BackButton.show();
+       var webApp = window.Telegram.WebApp;
+        
         var styles = webApp.themeParams;
         var data = webApp.initDataUnsafe;
-        
-        /*
         webApp.MainButton.show();
-        webApp.MainButton.setText('Написать эксперту');
+        
+        
+        webApp.MainButton.setText('▶️ НАПИСАТЬ ЭКСПЕРТУ');
          webApp.MainButton.color = styles.button_color;//"#ffaaff";
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
-        */
-        //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
-        //webApp.showConfirm('Подтверждение'); 
-           
+       
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-         document.getElementById('content').style.backgroundColor = styles.bg_color;
-         document.getElementById('content').style.color = styles.text_color;
-         document.getElementById('btn').style.backgroundColor = styles.bg_color;
-         document.getElementById('btn').style.color = styles.text_color;
-       
-        
-       
-        
+         document.body.style.backgroundColor = styles.bg_color;
+         document.body.style.color = styles.text_color;
+         document.getElementById('btn').style.backgroundColor = styles.button_color;
+         document.getElementById('btn').style.color = styles.button_text_color;
+            
+         webApp.onEvent('mainButtonClicked', function(){
+                webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
+                webApp.openTelegramLink('https://t.me/blrAlex');
+         });
         webApp.ready();   
         //webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
        /*  const styles ={"bg_color":"#ffffff",
