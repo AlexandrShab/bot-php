@@ -77,7 +77,7 @@
         webApp.MainButton.show();
         
         
-        webApp.MainButton.setText('Написать эксперту');
+        webApp.MainButton.setText('▶️ НАПИСАТЬ ЭКСПЕРТУ');
          webApp.MainButton.color = styles.button_color;//"#ffaaff";
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
        

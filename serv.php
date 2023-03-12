@@ -166,7 +166,7 @@ if (count($result) > 0) {
 } else {
     echo "<h3>Такого товара в оперативной базе не найдено!</h3>";
 }
-echo "<br/><button style=\"padding:10px; height: 40px;\" onclick=\"window.location.href='https://sertbot.shinny-mir.by/pages/find-product.php'\">Новый поиск</button>";
+echo "<br/><button id=\"btn\" style=\"padding:10px; height: 40px;\" onclick=\"window.location.href='https://sertbot.shinny-mir.by/pages/find-product.php'\">Новый поиск</button>";
 
 
 
@@ -212,18 +212,20 @@ function csvToBase($base)
        var webApp = window.Telegram.WebApp;
        webApp.MainButton.show();
         var styles = webApp.themeParams;
-        var data = webApp.initDataUnsafe;    
+        var data = webApp.initDataUnsafe;  
+        
+        webApp.MainButton.setText('▶️ НАПИСАТЬ ЭКСПЕРТУ');
+         webApp.MainButton.color = styles.button_color;//"#ffaaff";
+        webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
+
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
-        
-         document.body.style.background = styles.bg_color;
+        document.body.style.backgroundColor = styles.bg_color;
          document.body.style.color = styles.text_color;
-       /* 
-            document.querySelectorAll('button').style.backgroundColor = styles.button_color;
-       // document.button.style.backgroundColor = style.button_color;
-       document.querySelectorAll('button').style.backgroundColor = styles.button_text_color;
-        //document.button.style.color = style.button_text_color;
-        */
+         document.getElementById('btn').style.backgroundColor = styles.bg_color;
+         document.getElementById('btn').style.color = styles.text_color;
+         
+      
         webApp.onEvent('mainButtonClicked', function(){
                 webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
                 webApp.openTelegramLink('https://t.me/blrAlex');
