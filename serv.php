@@ -231,8 +231,8 @@ function csvToBase($base)
         //document.getElementById('list').innerHTML = JSON.stringify(style);
         document.body.style.backgroundColor = styles.bg_color;
          document.body.style.color = styles.text_color;
-         document.getElementById('btn').style.backgroundColor = styles.bg_color;
-         document.getElementById('btn').style.color = styles.text_color;
+         document.getElementById('btn').style.backgroundColor = styles.button_color;
+         document.getElementById('btn').style.color = styles.button_text_color;
          
       
         webApp.onEvent('mainButtonClicked', function(){

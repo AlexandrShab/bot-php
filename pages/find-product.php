@@ -88,8 +88,8 @@
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          document.getElementById('content').style.backgroundColor = styles.bg_color;
          document.getElementById('content').style.color = styles.text_color;
-         document.getElementById('btn').style.backgroundColor = styles.bg_color;
-         document.getElementById('btn').style.color = styles.text_color;
+         document.getElementById('btn').style.backgroundColor = styles.button_color;
+         document.getElementById('btn').style.color = styles.button_text_color;
             
          webApp.onEvent('mainButtonClicked', function(){
                 webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
