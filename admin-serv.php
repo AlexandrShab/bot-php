@@ -14,7 +14,7 @@ header('Access-Control-Allow-Origin: *');
 //require_once __DIR__ . '/classes/request.php';
 
 require_once __DIR__ . '/autoload.php';
-var_dump($_COOKIE);
+//var_dump($_COOKIE);
 
 define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
 
