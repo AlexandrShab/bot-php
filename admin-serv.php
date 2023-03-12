@@ -26,12 +26,13 @@ if (isset($_GET['logout'])) {
 //require_once __DIR__ . '/pages/header.php';
 
 $tg_user = getTelegramUserData();
-var_dump($tg_user);
+
 //~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
 if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 
 
 if ($tg_user !== false) {
+    var_dump($tg_user);
   $first_name = htmlspecialchars($tg_user->first_name);
   //$html .= "{$first_name}";
   
