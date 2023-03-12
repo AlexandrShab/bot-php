@@ -119,6 +119,12 @@ $tg_user = getTelegramUserData();
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
 <?php
+    }else
+    {
+?>
+    <div id="content">
+        <p1 class="main-title">Вам необходимо авторизоваться, либо у вас недостаточно прав...</p1>
+<?php        
     }
 
 // ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
