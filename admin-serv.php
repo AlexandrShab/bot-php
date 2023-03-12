@@ -36,7 +36,7 @@ if ($tg_user !== false) {
   $first_name = htmlspecialchars($tg_user->first_name);
   $html .= "{$first_name}";
   
-    $html .= "<a href=\"/?logout=1\" 
+    $html .= "<a href=\"/admin-serv.php?logout=1\" 
         class=\"dropdown\" style=\"float:right;\">
         <img src=\"/public/img/door1.jpg\"
             style=\"height:40px;margin-right:10px;\">
