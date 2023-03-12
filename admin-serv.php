@@ -147,7 +147,7 @@ $tg_user = getTelegramUserData();
 // ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
 
 //~~~~~~~~~~~~~
-if (isset($_GET['method']))
+if (isset($_GET['method']) && $isAdmin)
 { 
     if($_GET['method'] == 'getUsers') 
     {
