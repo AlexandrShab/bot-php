@@ -117,7 +117,7 @@ $tg_user = getTelegramUserData();
     }else {
         $bot_username = BOT_USERNAME;
         $authItem = new AuthItem;
-        $html = $authItem->content;
+        $html .= $authItem->content;
         $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Support</a>";
         //print_r($html);
     }
