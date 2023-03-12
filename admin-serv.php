@@ -135,7 +135,7 @@ $tg_user = getTelegramUserData();
         <p1 class="main-title">Страница администратора</p1>
         <div class="admin-menu">
             <div class="menu-item">
-                <a href="/?method=getUsers"><text>Пользователи бота</text></a>
+                <a href="https://sertbot.shinny-mir.by/admin-serv.php?method=getUsers"><text>Пользователи бота</text></a>
             </div>
             <div class="menu-item">
                 <text>Администраторы бота</text>
