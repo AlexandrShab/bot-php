@@ -214,7 +214,7 @@ if (isset($_GET['method']))
                     </td>
                 </tr>";
             }
-            $html = "</tbody>
+            $html .= "</tbody>
                 </table>
             </div>";
             
