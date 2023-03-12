@@ -80,10 +80,7 @@
         webApp.MainButton.setText('Написать эксперту');
          webApp.MainButton.color = styles.button_color;//"#ffaaff";
         webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
-        /**/
-        //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
-        //
-           
+       
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
          document.getElementById('content').style.backgroundColor = styles.bg_color;
@@ -94,12 +91,7 @@
          webApp.onEvent('mainButtonClicked', function(){
                 webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
                 webApp.openTelegramLink('https://t.me/blrAlex');
-	            webApp.sendData("some string that we need to send");  
-	        //при клике на основную кнопку отправляем данные в строковом виде
-            });
-        
-       
-        
+         });
         webApp.ready();   
         //webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
        /*  const styles ={"bg_color":"#ffffff",

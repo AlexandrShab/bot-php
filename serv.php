@@ -210,7 +210,7 @@ function csvToBase($base)
 ?>
  <script>
        var webApp = window.Telegram.WebApp;
-       webApp.MainButton.show();/*
+       webApp.MainButton.show();
         var style = webApp.themeParams;
         var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
@@ -223,13 +223,15 @@ function csvToBase($base)
        document.querySelectorAll('button').style.backgroundColor = style.button_text_color;
         //document.button.style.color = style.button_text_color;
         
-        webApp.MainButton.setText('Написать эксперту');
-        //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
-        //webApp.showConfirm('Подтверждение');
-       */ webApp.ready();
         webApp.onEvent('mainButtonClicked', function(){
+                webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
+                webApp.openTelegramLink('https://t.me/blrAlex');
+	            //webApp.sendData("some string that we need to send");  
+        });
+        webApp.ready();
+       /* webApp.onEvent('mainButtonClicked', function(){
 	    webApp.sendData("some string that we need to send"); 
-	//при клике на основную кнопку отправляем данные в строковом виде
+	        //при клике на основную кнопку отправляем данные в строковом виде*/
 });
 
     </script>
