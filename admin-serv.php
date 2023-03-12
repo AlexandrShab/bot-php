@@ -48,7 +48,7 @@ if ($tg_user !== false) {
 */
 //~~~~~~~~~~~~~~~~~Разметка страницы~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-header('Content-Type: text/html');
+//header('Content-Type: text/html');
 //require_once __DIR__ . '/pages/header.php';
 /*
 $html .= "</div>";
