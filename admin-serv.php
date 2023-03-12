@@ -66,6 +66,19 @@ $tg_user = getTelegramUserData();
             padding: 10px;
             border-radius: 5px;
         }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            border: solid gray 1px;
+        }
+        thead {
+            background:lightgray;
+            border: solid gray 1px;
+        }
+        td, th{
+            padding: 5px;
+            border: solid gray 1px;
+        }
     </style>
     
 </head>
@@ -140,14 +153,71 @@ if (isset($_GET['method']))
     {
         $base = new BaseAPI;
         $users = $base->getUsers();
-        $output = '';
+        $output = "<div id=\"list\">
+        <table>
+            <thead>
+                <th>
+                    №
+                </th>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Имя пользователя
+                </th>
+                <th>
+                    Юзернейм
+                </th>
+                <th>
+                    Дата старта
+                </th>
+                <th>
+                    Админ?
+                </th>
+                <th>
+                    Написать от имени бота
+                </th>
+            </thead>
+            <tbody>";
+        $num = 0;        
         foreach ($users as $user) {
-            $output .= "$user->id $user->first_name $user->last_name $user->username $user->date";
+            $num ++;
+            $adm = "Нет";
             if($user->is_admin == '1')
             {
-                $output .= " <strong>Админ</strong><br/>";
-            }else $output .= "<br/>";
-        }
+                $adm = "<strong>Да</strong>";
+            }
+            $output .= 
+                "<tr>
+                    <td>
+                        $num
+                    </td>
+                    <td>
+                        $user->id
+                    </td>
+                    <td>
+                        $user->first_name $user->last_name
+                    </td>
+                    <td>
+                        $user->username
+                    </td>
+                    <td>
+                        $user->date
+                    </td>
+                    <td>
+                        $adm
+                    </td>
+                    <td onclick=\"sendMesage($user->id)\">
+                        Написать
+                    </td>
+                </tr>";
+            }
+            $output = "</tbody>
+                </table>
+            </div>";
+            
+            
+        
         print_r($output);
     }
 
@@ -179,7 +249,12 @@ function getTelegramUserData() {
   ?>
         
      </div><!-- конец класса content-->
-        
+     <script>
+        function senMessage(user_id){
+            let link = "https://sertbot.shinny-mir.by/admin-serv.php?method=sendMessage&&chat_id=" + user_id;
+            document.location.href=link;
+        }
+     </script>   
     
 </body>
 </html>
