@@ -16,7 +16,7 @@ header('Access-Control-Allow-Origin: *');/*
 require_once __DIR__ . '/autoload.php';
 //var_dump($_COOKIE);
 $html = "<span></span>";
-define('BOT_USERNAME', 'SertSale_bot'); // place username of your bot here
+define('BOT_USERNAME', 'ByStatBot'); // place username of your bot here
 
 if (isset($_GET['logout'])) {
   setcookie('tg_user', '');
