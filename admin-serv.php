@@ -153,6 +153,7 @@ if (isset($_GET['method']))
     {
         $base = new BaseAPI;
         $users = $base->getUsers();
+        var_dump($users);
         $output = "<div id=\"list\">
         <table>
             <thead>
