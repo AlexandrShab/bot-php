@@ -123,7 +123,9 @@ $tg_user = getTelegramUserData();
     {
 ?>
     <div id="content">
-        <p1 class="main-title">Вам необходимо авторизоваться, либо у вас недостаточно прав...</p1>
+        <p1 class="main-title">Вам необходимо авторизоваться, либо у вас недостаточно прав...</p1><br/><br/>
+
+
 <?php        
     }
 
@@ -164,7 +166,7 @@ function getTelegramUserData() {
   }
   ?>
      </div><!-- конец класса content-->
-
+        <p1></p1><a href="https:/t.me/AlexanderShab">Обратиться к разработчику</a></p1>
     
 </body>
 </html>
