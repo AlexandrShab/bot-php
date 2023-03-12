@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
 
     <title>SertSale</title>
     <style>
@@ -56,7 +56,8 @@
     </div>
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
-       <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
+       <!--
+        <form action="https://sertbot.shinny-mir.by/serv.php" method="post">
             <div style="display:grid; justify-content:center;">
                 <input style="width:100%; 
                     height: 100%; font-size: 20px;" 
@@ -65,52 +66,28 @@
             </div>
         </form>
        -->
+       <div class="admin-menu">
+            <div class="menu-item">
+                <text>Пользователи бота</text>
+            </div>
+            <div class="menu-item">
+                <text>Администраторы бота</text>
+            </div>
+            <div class="menu-item">
+                <text>Запросы по поиску</text>
+            </div>
+            <div class="menu-item">
+                <text>Акции и участники</text>
+            </div>
+            <div class="menu-item">
+                <text>Редактор товаров базы</text>
+            </div>
+       </div>
         <div id="list">
 
         </div>
     </div>
 
-    <script>
-       var webApp = window.Telegram.WebApp;
-        
-        var styles = webApp.themeParams;
-        var data = webApp.initDataUnsafe;
-        webApp.MainButton.show();
-        
-        
-        webApp.MainButton.setText('▶️ НАПИСАТЬ ЭКСПЕРТУ');
-         webApp.MainButton.color = styles.button_color;//"#ffaaff";
-        webApp.MainButton.textColor = styles.button_text_color;//"#168acd";
-       
-        //document.getElementById('list').innerHTML = JSON.stringify(data);
-        //document.getElementById('list').innerHTML = JSON.stringify(style);
-         document.body.style.backgroundColor = styles.bg_color;
-         document.body.style.color = styles.text_color;
-         document.getElementById('btn').style.backgroundColor = styles.button_color;
-         document.getElementById('btn').style.color = styles.button_text_color;
-            
-         webApp.onEvent('mainButtonClicked', function(){
-                webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
-                webApp.openTelegramLink('https://t.me/blrAlex');
-         });
-        webApp.ready();   
-        //webApp.onEvent('mainButtonClicked', webApp.showAlert('Main Button Pressed!'));
-       /*  const styles ={"bg_color":"#ffffff",
-                "button_color":"#40a7e3",
-                "button_text_color":"#ffffff",
-                "hint_color":"#999999",
-                "link_color":"#168acd",
-                "secondary_bg_color":"#f1f1f1",
-                "text_color":"#000000"};
-            const appData =    {"query_id":"AAEauLg5AAAAABq4uDmPIyie",
-                            "user":{"id":968407066,
-                                "first_name":"Alex",
-                                "last_name":"🎗",
-                                "username":"BlrAlex",
-                                "language_code":"ru",
-                                "is_premium":true},
-                            "auth_date":"1678476891",
-                            "hash":"f4dd11e37760871ba8773979860514647e427080b559d83cc029488139e81c08"};*/
-    </script>
+    
 </body>
 </html>
