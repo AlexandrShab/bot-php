@@ -26,6 +26,9 @@ $tg_user = getTelegramUserData();
 
     <title>SertSale</title>
     <style>
+        body {
+            font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
+        }
         .main-title {
             font-family: "Playfair Display", Roboto, Helvetica, Arial, sans-serif;
             font-size: 1.2rem;
