@@ -1,13 +1,9 @@
 <?php
     header('Access-Control-Allow-Origin: *');
-?>
-
-<?php
-//require_once __DIR__ . '/classes/request.php';
 
 require_once __DIR__ . '/autoload.php';
 //var_dump($_COOKIE);
-$html = "<span></span>";
+
 define('BOT_USERNAME', 'ByStatBot'); // place username of your bot here
 
 if (isset($_GET['logout'])) {
@@ -80,7 +76,7 @@ $tg_user = getTelegramUserData();
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
 <?php
-
+$html = "<span></span>";
    
 
 //~~~~~~~~~
