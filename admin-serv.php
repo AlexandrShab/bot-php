@@ -51,7 +51,7 @@ if ($tg_user !== false) {
           $html .= "<name style=\"float:right;margin:10px;
                 color:white;\">{$first_name}</name>";
       }
-    
+   print_r($html); 
 }else {
     $bot_username = BOT_USERNAME;
     $authItem = new AuthItem;
