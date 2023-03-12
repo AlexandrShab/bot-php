@@ -212,7 +212,7 @@ function csvToBase($base)
        var webApp = window.Telegram.WebApp;
        webApp.MainButton.show();
         var style = webApp.themeParams;
-        //var data = webApp.initDataUnsafe;    
+        var data = webApp.initDataUnsafe;    
         //document.getElementById('list').innerHTML = JSON.stringify(data);
         //document.getElementById('list').innerHTML = JSON.stringify(style);
         
@@ -227,7 +227,7 @@ function csvToBase($base)
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение');
        
-        Telegram.WebApp.onEvent('mainButtonClicked', function(){
+        webApp.onEvent('mainButtonClicked', function(){
 	    webApp.sendData("some string that we need to send"); 
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
