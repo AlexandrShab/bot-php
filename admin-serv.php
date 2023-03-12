@@ -28,7 +28,7 @@ if (isset($_GET['logout'])) {
 $tg_user = getTelegramUserData();
 
 //~~~~~~~~~Check isAdmin~~~~~~~~~~~~~~~~~~~~~~
-var_dump($tg_user->isAdmin);
+var_dump($tg_user);
    if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 
 //~~~~~~~~~
