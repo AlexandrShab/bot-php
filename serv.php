@@ -226,12 +226,12 @@ function csvToBase($base)
         webApp.MainButton.setText('Написать эксперту');
         //webApp.MainButton.onClick(document.location.href='https://t.me/blrAlex');
         //webApp.showConfirm('Подтверждение');
-       */
+       */ webApp.ready();
         webApp.onEvent('mainButtonClicked', function(){
 	    webApp.sendData("some string that we need to send"); 
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
- webApp.ready();
+
     </script>
 </body>
 </html>
