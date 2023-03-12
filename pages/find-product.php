@@ -48,6 +48,9 @@
             padding: 10px;
             border-radius: 5px;
         }
+        #btn:onClick{
+            backgroundColor:gray;
+        }
     </style>
 </head>
 <body>
