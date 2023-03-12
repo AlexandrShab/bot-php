@@ -34,7 +34,7 @@ if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 if ($tg_user !== false) {
     var_dump($tg_user);
   $first_name = htmlspecialchars($tg_user->first_name);
-  //$html .= "{$first_name}";
+  $html .= "{$first_name}";
   
     $html .= "<a href=\"/?logout=1\" 
         class=\"dropdown\" style=\"float:right;\">
