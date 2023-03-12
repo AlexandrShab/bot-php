@@ -218,11 +218,12 @@ function csvToBase($base)
         
          document.body.style.background = styles.bg_color;
          document.body.style.color = styles.text_color;
-        document.querySelectorAll('button').style.backgroundColor = styles.button_color;
+       /* 
+            document.querySelectorAll('button').style.backgroundColor = styles.button_color;
        // document.button.style.backgroundColor = style.button_color;
        document.querySelectorAll('button').style.backgroundColor = styles.button_text_color;
         //document.button.style.color = style.button_text_color;
-        
+        */
         webApp.onEvent('mainButtonClicked', function(){
                 webApp.showAlert('Переход в чат с экспертом\nПодсчет нажатия кнопки');
                 webApp.openTelegramLink('https://t.me/blrAlex');
