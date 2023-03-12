@@ -113,13 +113,13 @@ $tg_user = getTelegramUserData();
                     color:black;\">{$first_name}</name>";
           }
         $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Support</a>";
-       //print_r($html); 
+       print_r($html); 
     }else {
         $bot_username = BOT_USERNAME;
         $authItem = new AuthItem;
         $html .= $authItem->content;
         $html .= "<a style=\"float:left;\" href=\"https:/t.me/AlexanderShab\">Support</a>";
-        //print_r($html);
+        print_r($html);
     }
     
 ?>
@@ -155,7 +155,7 @@ if (isset($_GET['method']))
         $users = $base->getUsers();
         
         
-        $html = "<div id=\"list\">
+        $output = "<div id=\"list\">
         <table>
             <thead>
                 <th>
@@ -189,7 +189,7 @@ if (isset($_GET['method']))
             {
                 $adm = "<strong>Да</strong>";
             }
-            $html .= 
+            $output .= 
                 "<tr>
                     <td>
                         $num
@@ -214,16 +214,16 @@ if (isset($_GET['method']))
                     </td>
                 </tr>";
             }
-            $html .= "</tbody>
+            $output .= "</tbody>
                 </table>
             </div>";
-            
+            print_r($output);
             
         
        
     }
 
- print_r($html);
+ 
 }
 //~~~~~~~~~~~~~
 
