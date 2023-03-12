@@ -113,24 +113,24 @@ $tg_user = getTelegramUserData();
     </div>
     
 <?php
-
-
-
-// ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
-
-//~~~~~~~~~~~~~
-if($_SERVER["REQUEST_URI"] == '/admin') 
-{
     if ($isAdmin)
    {
 ?>
     <div id="content">
         <p1 class="main-title">Страница администратора</p1>
 <?php
+    }
+
+// ~~~~~~~~~~ Начало контента страницы~~~~~~~~~~~~~~~~~~~~~
+
+//~~~~~~~~~~~~~
+if($_SERVER["REQUEST_URI"] == '/admin') 
+{
+
       require_once __DIR__ . '/pages/admin-page.php';
        
       exit;
-    }
+    
 }
 
 //~~~~~~~~~~~~~
