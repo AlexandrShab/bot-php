@@ -34,13 +34,14 @@ if ($tg_user->isAdmin == '1'){$isAdmin = true;}
 if ($tg_user !== false) {
     //var_dump($tg_user);
   $first_name = htmlspecialchars($tg_user->first_name);
-  $html .= "<name style=\"float:right;\">{$first_name}</name>";
+  
   
     $html .= "<a href=\"/admin-serv.php?logout=1\" 
         class=\"dropdown\" style=\"float:right;\">
         <img src=\"/public/img/door1.jpg\"
             style=\"height:40px;margin-right:10px;\">
         </a>";
+    $html .= "<name style=\"float:right;\">{$first_name}</name>";
  if (isset($tg_user->photo_url)) {
     $photo_url = htmlspecialchars($tg_user->photo_url);
     //$photo_url = $tg_user['photo_url'];
