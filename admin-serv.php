@@ -146,7 +146,7 @@ if (isset($_GET['method']))
             if($user->is_admin == '1')
             {
                 $output .= " <strong>Админ</strong><br/>";
-            }
+            }else $output .= "<br/>";
         }
         print_r($output);
     }
